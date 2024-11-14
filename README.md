@@ -1,14 +1,10 @@
-# ICT-Project
+![Screenshot 2024-11-14 105341](https://github.com/user-attachments/assets/adf9da99-f9b2-4389-a3b1-bfedaed7a4e6)# ICT-Project
 
 ## Layout
 ![1](https://github.com/user-attachments/assets/35157886-af10-4a49-8d20-79da1fef45b5)
 
 ## Colour Scheme
-- Encapsulation boxes:  #1d3b31 (Dark Green)
-- Text in boxes: #d6dfda (white)
-- Background:  #ece5db (Cream)
-- Text: #322d29 (charcoal)
-- Buttons: #a3be79 (Light Green)
+![Screenshot 2024-11-14 105341](https://github.com/user-attachments/assets/c04092c1-9fe3-4538-9033-298170e14737)
 
 ## Logo
 ![Logo](https://github.com/user-attachments/assets/9fbeb45b-2b6a-4911-9ec1-b5d1b66473a3)
