@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Massages</title>
+
+    <style>
+
+        div.navbar{
+            font-size: x-small;
+            background-color:#ffffff;
+            height:90px;
+            padding:0px 20px;
+            top:0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            
+          
+            
+        }
+
+        
+        div.navbar button {
+           
+            margin-right:10px;
+            position:relative;bottom:100px;
+            color: #3d5570;
+            cursor: pointer;
+            background-color: #ffffff;
+            border:none;
+
+            
+
+        }
+
+        h1.heading{
+            margin-top:80px;
+            text-align: center;
+            color: #fff ;
+            background-color: #3d5570;
+            padding:40px ;
+            background-image: url(images/raw2.jpg);
+            background-blend-mode: overlay;
+           
+        }
+
+    
+
+        div.main{
+         
+        }
+    
+        div.main img{
+            height: 350px;
+            width: 350px;
+            margin-left:90px;
+            transition: transform .2s;
+            padding:15px;
+         }
+
+         .main img:hover {
+    transform: scale(1.17); 
+}
+
+
+        
+
+
+        div.guasha{
+            padding:50px;
+            height:400px;
+        
+           background-color: #3d5570;
+        }
+        ol.guashasteps{
+           color: #ffffff;
+        }
+
+        div.roller{
+            padding:50px;
+            height:400px;
+            background-color:#ffffff;
+        }
+        
+
+        div.lifting{
+            padding:50px;
+            background-color: #3d5570;
+            height:400px;
+            color:#ffffff;
+
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+
+        <img style="width: 350px ; height: 150px;margin-left:-20px;margin: bottom 5px;"; src="images/logo1.png" alt="DermaLiss">
+
+        <a style="margin-left:500px;" href=":any-link"> <button type="">HOME</button></a>
+        <a href=":any-link"><button type="">PRODUCTS</button></a>
+        <a href=":any-link"><button type="">REMEDIES</button></a>
+        <a href=":any-link"><button type="">MASSAGES</button></a>
+        <a href=":any-link"><button type="">ABOUT US</button></a>
+      </div>
+
+    
+      <h1 class ="heading">MASSAGES</h1>
+
+
+    <div class = "main">
+        <br>
+   
+    <br>
+    <img style="height: 300px;width: 250px;margin-bottom:0px;" src="images/blue guashatool.png" alt="Guashatool" onclick="navigateToSection('guasha-massage')">
+
+
+    <img src="images/blue roller jade.png" alt="Rollertool" onclick="navigateToSection('roller-massage')">
+
+    
+     <img src="images/sculptort.jpg" alt="Sculptor tool" onclick="navigateToSection('sculpting-massage')">
+
+     
+     
+
+
+</div>
+
+
+  <div class="guasha" id="guasha-massage">
+    <br><br><br>
+
+   
+<h2 style = "color: #ffffff;">GUASHA MASSAGE</h2>
+
+
+    <ul style = "color: #ffffff;">
+        <li>Makes skin smooth and even</li>
+        <li>Improves facial contours and complexion</li>
+        <li>Reduces puffiness</li>
+        <li>Eliminates wrinkles</li>
+    </ul>
+    
+    <ol class = "guashasteps">
+        <li> Use the long side of the scraper too massage along the line from the nose to the ear</li>
+        <li> Use the edge of the scraper to massage along the line starting from the corner of your eye</li>
+        <li> Use the short side of the scraper to massage the nose bridge upward</li>
+        <li> Use the long side of the scraper to massage the entire forehead upward</li>
+        <li>Apply these steps to both side of the face</li>
+
+    </ol>
+
+    <img style="float:right;margin-top:-250px; margin-right:50px;height: 270px; width:270px" src="images/Guasha 3.webp" alt="Guasha massage">
+    <br>
+    <br>
+    <br>
+
+
+</div> 
+
+
+<div class="roller" id="roller-massage">
+    <br>
+
+    
+<h2 style="margin-left: 670px;color:#3d5570">ROLLER MASSAGE</h2>
+
+<ul style="margin-left:650px;color: #3d5570">
+    <li>Helps to reduce facial puffiness</li>
+    <li>Improves complexion</li>
+    <li>Improves skin tone</li>
+</ul>
+
+<ol style="margin-left:650px;color: #3d5570">
+    <li>Use a large roller to massage the entire forehead upward</li>
+    <li>Roll along the nose bridge to the hairline with a small roller</li>
+    <li>Use a small roller to roll along the line just below your eyebrow</li>
+    <li>Use a weak roller to roll along the line starting from the corner of your eye</li>
+    <li>Open your mouth as if you're going to say "O" and use a small roller to roll up and down along the nasobladial fold</li>
+    <li>Use a large roller to roll along the jawline upward</li>
+    <li>Use a large roller to roll along the line starting from the corner of your lips upwards</li>
+    <li>Repeat the steps for the other side of the face too</li>
+    <li>After your massage session . Use your fingertips to gently tap over your forehead,cheeks,chin,and area around the eyes</li>
+</ol>
+<br>
+    
+<img style="float:left;margin-top:-300px;height: 250px; width:270px;"   src="images/roller.jpg" alt="Roller massage">
+<br><br>
+
+</div>
+
+<div class="lifting" id="sculpting-massage">
+    <br>   
+    <h2 style ="margin-left:20px;"> SCULPTING MASSAGE</h2>
+    <ul>
+        <li> Tone, lift, and define facial muscles.</li>
+        <li>Enhance facial contours</li>
+        <li>Reduce puffiness, and improve circulation</li>
+    </ul>
+
+
+    <ol>
+        <li>Place the sculptor at the center of your chin,Glide it along the jawline, moving from the center of your chin toward your ear</li>
+        <li>Use upward strokes, glide the sculptor outward toward the temple.</li>
+        <li>Starting in the center of the forehead, glide the tool upwards toward the hairline moving toward the temples on both sides.</li>
+        <li>Use the edge of the sculptor , glide near the inner corner of the eye and move outward toward the temple.</li>
+        <li>Place the sculptor at the base of your neck and glide upward toward the jawline. Repeat on both sides of the neck</li>
+        <li>For the back of the neck,glide from the base of the neck upward toward the base of the skull.</li>
+        <li>After your massage session . Use your fingertips to gently tap over your forehead,cheeks,chin,and area around the eyes</li>
+    </ol>
+    
+    <img style="float:right;margin-top:-250px; margin-right:50px;height: 250px; width:270px;" src="images/face_sculptor-removebg-preview.png" alt="Face sculpting massage">
+    <br><br><br>
+
+</div>
+
+<script src="sroll.js"></script>
+    
+</body>
+</html>
