@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+</head>
+<style>
+    body{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .navbar {
+        font-size: x-small;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top:0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        z-index: 1000px;
+        height: 90px;
+        width: 100%;
+    }
+
+    .navbar button {
+        margin: 13px;
+        vertical-align: top;
+        display: flex;
+        border: none;
+        background-color: white;
+        color: #3d5570;
+        transition: background-color 0.15s, padding 0.15s;
+        padding: 7px;
+        cursor: pointer;
+
+    }
+
+    .navbar button:hover {
+        background-color: #2585a0;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+
+    .topBar {
+        position: relative;
+        width: 100%;
+        height: 60vh;
+        background-color: #3d5570;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin-top: 100px;
+    }
+
+    .topBar img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+
+    .topBar:hover img {
+        opacity: 1;
+    }
+
+    .topBar h1 {
+        position: relative;
+        font-size: 4em;
+        font-weight: bold;
+        color: #ffffff;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .allProducts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        margin: 20px auto;
+    }
+
+    .products {
+        cursor: pointer;
+        transition: transform 0.4s;
+        width: 250px;
+        text-align: center;
+    }
+
+    .products img {
+        width: 100%;
+        height: 250px;
+        border-radius: 10px;
+    }
+
+    .products:hover {
+        transform: scale(1.05);
+    }
+
+    .view{
+        background-color: #3d5570;
+        color: #ffffff;
+    }
+
+    .imgstyle img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  width: 300 px;
+}
+
+
+
+</style>
+<body>
+    <div class="navbar">
+        <img style="width: 350px ; height: 150px; margin-left:-5px;margin: bottom 2px; margin-top: 19px;" src="logo.png" alt="Dermaliss logo">
+        <a style="margin-left:575px;" href=":any-link"> <button type="">HOME</button></a>
+        <a href=""><button type="">PRODUCTS</button></a>
+        <a href=""><button type="">REMEDIES</button></a>
+        <a href=":any-link"><button type="">MASSAGES</button></a>
+        <a href=":any-link"><button type="">ABOUT US</button></a>
+    </div>
+
+    <div class="topBar">
+        <h1>PRODUCTS</h1>
+        <img src="Bar image.jpg" alt="Product Preview Image">
+    </div>
+
+
+    <div class="allProducts">
+        <div class="products">
+            <img src="Hydrating Mask.jpg" alt="Hydrating Mask" onclick="scroll('hydrating mask')">
+            <p>Laneige Water Sleeping Mask</p>
+        </div>
+        <div class="products">
+            <img src="(2).webp" alt="Hyaluronic Acid Serum" onclick="scroll('healing serum')">
+            <p>Healing Serum: CeraVe Hydrating Hyaluronic Acid Serum</p>
+        </div>
+        <div class="products">
+            <img src="Exfoliating Toner.jpg" alt="Exfoliating Toner" onclick="scroll('exfoliating toner')">
+            <p>Exfoliating Toner: The Ordinary Glycolic Acid 7% Toning Solution</p>
+        </div>
+        <div class="products">
+            <img src="Acne Treatment.jpg" alt="Acne Treatment" onclick="scroll('acne treatment')">
+            <p>Acne Spot Treatment: La Roche-Posay Effaclar Duo (+)</p>
+        </div>
+        <div class="products">
+            <img src="lip therapy.webp" alt="Lip Therapy"  onclick="scroll('lip therapy')">
+            <p>Fresh Sugar Lip Treatment Advanced Therapy</p>
+        </div>
+        </div>
+
+        <h2 style="text-align: center; font-weight: bold; font-size: 2em; color: #3d5570;"><u>PRODUCT DETAILS</u></h2>
+        <br>
+
+
+        <div id="hydrating mask" class="details">
+            <div class="view">
+                <div class="description">
+                    <div class="Benefits">
+                        <h3>Benefits</h3>
+                        <ul>
+                            <li>Deeply hydrates and nourishes the skin while you sleep.</li>
+                            <li>Helps improve skin texture, making it soft, smooth, and plump.</li>
+                            <li>Soothes and calms the skin, reducing redness and irritation.</li>
+                            <li>Leaves the skin looking refreshed and glowing in the morning.</li>
+                        </ul>
+                    </div>
+                    <div class="imgstyle">
+                        <img class="image" src="Hydrating Mask.jpg" alt="Hydrating Mask">
+                    </div>
+                    <div class="Ingredients">
+                        <h3>Ingredients</h3>
+                        <ul>
+                            <li>Hyaluronic Acid</li>
+                            <li>Beta-Glucan</li>
+                            <li>Ceramides</li>
+                            <li>Sleep-Tox™ Technology</li>
+                        </ul>
+                    </div>
+                <div class="directions">
+                    <h3>Directions</h3>
+                    <ul>
+                        <li>After cleansing and toning your face, take a small amount of the mask.</li>
+                        <li>Apply an even layer across your face, avoiding the eye and lip area.</li>
+                        <li>Leave it on overnight and rinse off with water in the morning.</li>
+                        <li>Use it 2-3 times a week as the final step of your nighttime skincare routine.</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div id="healing serum" class="details">
+            <div class="view">
+                <div class="imgstyle">
+                    <img class="image" src="Hyaluronic acid Serum(1).jpg" alt="Hyaluronic Acid Serum">
+                </div>
+                <div class="description">
+                    <div class="Benefits">
+                        <h3>Benefits</h3>
+                        <ul>
+                            <li>Deeply hydrates and plumps the skin..</li>
+                            <li>Reduces redness and irritation.</li>
+                            <li>Strengthens the skin barrier.</li>
+                        </ul>
+                    </div>
+                    <div class="Ingredients">
+                        <h3>Ingridients</h3>
+                        <ul>
+                            <li>Hyaluronic Acid</li>
+                            <li>Vitamin B5 (Panthenol)</li>
+                            <li>Ceramides</li>
+                        </ul>
+                    </div>
+                <div class="directions">
+                    <h3>Directions</h3>
+                    <ul>
+                        <li>Cleanse your face and pat dry.</li>
+                        <li>Apply 1-2 pumps of the serum to your face and neck.</li>
+                        <li>Follow up with a moisturizer to lock in the hydration.</li>
+                        <li>Frequency: Use twice daily (morning and night).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <br>
+
+        <div id="exfoliating toner" class="details">
+            <div class="view">
+                <div class="imgstyle">
+                    <img class="image" src="Exfoliating Toner.jpg" alt="Exfoliating Toner">
+                    <p>Exfoliating Toner: The Ordinary Glycolic Acid 7% Toning Solution</p>
+                </div>
+                <div class="description">
+                    <div class="Benefits">
+                        <h3>Benefits</h3>
+                        <ul>
+                            <li>Exfoliates dead skin cells, revealing a brighter complexion.</li>
+                            <li>Improves skin texture and reduces the appearance of pores.</li>
+                            <li>Helps with uneven skin tone and hyperpigmentation.</li>
+                        </ul>
+                        </div>
+                    <div class="Ingredients">
+                        <h3>Ingredients</h3>
+                        <ul>
+                            <li>Glycolic Acid</li>
+                            <li>Tasmanian Pepperberry Extract</li>
+                            <li>Aloe Vera</li>
+                    </div>
+                <div class="directions">
+                    <h3>Directions</h3>
+                    <ul>
+                        <li>Use after cleansing your face at night.</li>
+                        <li>Soak a cotton pad with the toner and swipe it across your face, avoiding the eye area.</li>
+                        <li>Follow with a hydrating serum or moisturizer.</li>
+                        <li>Frequency: Use 2-3 times per week, especially if you have sensitive skin.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <br>
+    
+
+        <div id="acne treatment" class="details">
+            <div class="view">
+                <div class="imgstyle">
+                    <img class="image" src="Acne Treatment.jpg" alt="Acne Treatment">
+                </div>
+                <div class="description">
+                    <div class="Benefits">
+                        <h3>Benefits</h3>
+                        <ul>
+                            <li>Reduces the size and redness of pimples quickly.</li>
+                            <li>Prevents future breakouts by unclogging pores.</li>
+                            <li>Helps fade post-acne marks over time.</li>
+                        </ul>
+                        </div>
+                    <div class="Ingredients">
+                        <h3>Ingredients</h3>
+                        <ul>
+                            <li>Benzoyl Peroxide</li>
+                            <li>Niacinamide</li>
+                            <li>Ceramides</li>
+                            <li>Salicylic Acid</li>
+                        </ul>
+                    </div>
+                <div class="directions">
+                    <h3>Directions</h3>
+                    <ul>
+                        <li>Cleanse your face and dry it.</li>
+                        <li>Apply a small amount of the treatment directly onto the affected area.</li>
+                        <li>Follow with a moisturizer.</li>
+                        <li>Frequency: Use once daily (nighttime recommended).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <br>
+
+        <div id="lip therapy" class="details">
+            <div class="view">
+                <div class="imgstyle">
+                    <img class="image" src="lip therapy.webp" alt="Lip therapy">
+                </div>
+                <div class="description">
+                    <div class="Benefits">
+                        <h3>Benefits</h3>
+                        <ul>
+                            <li>Helps fade lip pigmentation and brighten the lips.</li>
+                            <li>Provides intense hydration and reduces the appearance of fine lines.</li>
+                            <li>Leaves lips feeling soft, smooth, and plump.</li>
+                        </ul>
+                    <div class="Ingredients">
+                        <h3>Ingredients</h3>
+                        <ul>
+                            <li>Sugar</li>
+                            <li>Sea Fennel Extract</li>
+                            <li>Shea Butter and Jojoba Oil</li>
+                            <li>Vitamin C and E</li>
+                        </ul>
+                    </div>
+                <div class="directions">
+                    <h3>Directions</h3>
+                    <ul>
+                        <li>Apply a generous layer to clean lips..</li>
+                        <li>Use throughout the day as needed, or as an overnight treatment.</li>
+                        <li>Frequency: Can be used daily, both as a daytime balm and an overnight lip mask.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+            </div>
+
+            <script src="Products.js">
+            </script>
+    
+</body>
+</html>
