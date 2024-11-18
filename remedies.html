@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar {
+        font-size: x-small;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top:0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        z-index: 1000px;
+        height: 90px;
+        width: 100%;
+    }
+
+    .navbar button {
+        margin: 13px;
+        vertical-align: top;
+        display: flex;
+        border: none;
+        background-color: white;
+        color: #3d5570;
+        transition: background-color 0.15s, padding 0.15s;
+        padding: 7px;
+        cursor: pointer;
+
+    }
+
+    .navbar button:hover {
+        background-color: #2585a0;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    body {
+        padding-top: 90px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .heading {
+        position: relative;
+        height: 550px;
+        width: 100%;
+    }
+
+    .heading img {
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .heading::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(42, 62, 84, 0.93);
+        z-index: 10;
+    }
+
+    .heading:hover {
+        background-color: none;
+    }
+
+    h1, .slogan {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+    }
+
+    h1 {
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-weight: bold;
+        text-decoration: underline;
+        font-style: italic;
+        font-size: 50px;
+        text-align: center;
+        opacity: 0;
+        animation: slideDown 1.5s ease-out forwards;
+    }
+
+    @keyframes slideDown {
+        0% {
+            top: -100px;
+            opacity: 0;
+        }
+
+        100% {
+            top: 40%;
+            opacity: 1;
+        }
+    }
+
+    .slogan {
+        font-size: 20px;
+        color: white;
+        top: 55%;
+        left: 50%;
+        opacity: 0;
+        transform: translateX(-50%) scaleX(0); 
+        animation: fadeInWipe 2s ease-out 1.5s forwards;
+    }
+
+    @keyframes fadeInWipe {
+        0% {
+            opacity: 0;
+            transform: translateX(-50%) scaleX(0); 
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(-50%) scaleX(1); 
+        }
+    }
+
+    .remedy1 {
+        margin: 30px;
+    }
+
+    .honey_coffee_mask {
+        height: 125px;
+        border-radius: 50%;
+        width: 125px;
+        object-fit: cover;
+        object-position: middle;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .ingredients {
+        display: inline-block;
+        text-align: center;
+        margin: 20px;
+    }
+
+    figcaption {
+        margin-top: 8px;
+        font-size: 15px;
+        color: #2a3e54;
+    }
+
+    .light_bg {
+        color:#2a3e54;
+    }
+
+
+    h2 {
+        font-size: 33px; 
+        font-weight: bold; 
+        text-decoration: underline;
+        display: flex;
+    }
+
+    ul {
+        margin-top: 30px;
+        margin-left: 30px;
+        width: 500px;
+    }
+
+    .f1 {
+        display: inline-block;
+    }
+
+
+</style>
+
+
+<body>
+    <div class="navbar">
+        <img style="width: 350px ; height: 150px; margin-left:-5px;margin: bottom 2px; margin-top: 19px;" src="images/logo1.png" alt="Dermaliss logo">
+        <a style="margin-left:575px;" href=":any-link"> <button type="">HOME</button></a>
+        <a href=":any-link"><button type="">PRODUCTS</button></a>
+        <a href=":any-link"><button type="">REMEDIES</button></a>
+        <a href=":any-link"><button type="">MASSAGES</button></a>
+        <a href=":any-link"><button type="">ABOUT US</button></a>
+    </div>
+
+    <div class="heading">
+        <img src="images/homeremediesbg.jpg" alt="background for home remedies">
+        <h1 class="text-overlay">Home Remedies for Skincare</h1>
+        <h3 class="slogan">From Your Kitchen to Your Skin: Simple Remedies for All</h3>
+    </div>
+
+    <div class="remedy1">
+        
+        <div class="f1">
+        <h2 class="light_bg">Honey Coffee Face Mask</h2>
+
+            <ul class="light_bg">
+                Benefits:
+                <li>
+                    Exfoliation: Coffee grounds gently scrub away dead skin cells, revealing a brighter complexion.
+                </li>
+                <li>
+                    Antioxidant Boost: Both coffee and honey are rich in antioxidants, which help combat free radicals and signs of aging.
+
+                </li>
+            </ul>
+            
+            <figure class="ingredients">
+                <img src="images/groundcoffee.jpg" alt="Ground Coffee" class="honey_coffee_mask">
+                <figcaption>Ground Coffee</figcaption>
+            </figure>
+            
+            <figure class="ingredients">
+                <img src="images/honey.webp" alt="Honey" class="honey_coffee_mask" style="margin-left: 50px;">
+                <figcaption style="margin-left: 40px;">Honey</figcaption>
+            </figure>
+        </div>
+
+        <img src="images/Guasha 3.webp" style="float: right; vertical-align: top; height: 550px; ">
+    </div>
+</body>
+</html>
