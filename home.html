@@ -1,120 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
-</head>
+  </head>
 
-<style>
+  <style>
     * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .navbar {
+      font-size: x-small;
+      display: flex;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: white;
+      z-index: 1000;
+      height: 90px;
+      width: 100%;
+    }
+
+    .navbar button {
+      margin: 13px;
+      vertical-align: top;
+      display: flex;
+      border: none;
+      background-color: white;
+      color: #3d5570;
+      transition: background-color 0.15s, padding 0.15s;
+      padding: 7px;
+      cursor: pointer;
+    }
+
+    .navbar button:hover {
+      background-color: #2585a0;
+      color: white;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    body {
+      padding-top: 90px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .section {
+      height: 650px;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .heading {
+      position: relative;
+      width: 100%;
+    }
+
+    .heading img {
+      width: 100%;
+      height: 650px;
+      object-fit: cover;
+      object-position: top;
+    }
+
+    .heading::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      
+      z-index: 10;
+    }
+
+    img.LOGO {
+      height: 300px;
+      width: 400px;
+      margin-left: 450px;
+      margin-bottom: 500px;
+      margin-top: -500px;
+      z-index=1;
+    }
+    img.Products {
+      margin-top: 50px;
+      margin-left: 100px;
+      width: 300px;
+      height: 350px;
+    }
+
+    img.Massages {
+      width: 350px;
+      height: 350px;
+      margin-left: 100px;
+    }
+    img.Remedies {
+      width: 350px;
+      height: 350px;
+      margin-left: 100px;
+    }
+
+    .options {
+      height: 400px;
+      margin-top:-300px;
+      margin-bottom:200px;
+    }
+
+    .options img {
+        margin-top: 30px;
+       
+        margin-left: 100px;
+        transition: transform 0.2s;
+        border-radius: 30px;
+        border: 5px solid #2a3e54;
+      }
+
+      .options img:hover {
+        transform: scale(1.1);
+      }
+
+    h1.offer {
+      margin-top: 70px;
+      text-align: center;
+      font-size: 40px;
+    }
+
+    @keyframes changeBackground {
+  0%, 50% {
+    background-image: url("images");
   }
-
-  .navbar {
-    font-size: x-small;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: white;
-    z-index: 1000;
-    height: 90px;
-    width: 100%;
+  50%, 100% {
+    background-image: url("images/homeback2.jpg"); 
   }
-
-  .navbar button {
-    margin: 13px;
-    vertical-align: top;
-    display: flex;
-    border: none;
-    background-color: white;
-    color: #3d5570;
-    transition: background-color 0.15s, padding 0.15s;
-    padding: 7px;
-    cursor: pointer;
-  }
-
-  .navbar button:hover {
-    background-color: #2585a0;
-    color: white;
-    padding: 10px;
-    margin: 10px;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  body {
-    padding-top: 90px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .section {
-    height: 650px;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-  .heading {
-    position: relative;
-    width: 100%;
-  }
-
-  .heading img {
-    width: 100%;
-    height: 650px;
-    object-fit: cover;
-    object-position: top;
-  }
-
-  .heading::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(42, 62, 84, 0.8);
-    z-index: 10;
-  }
-</style>
+}
 
 
-<body>
+.heading{
+  animation: changeBackground 5s infinite alternate;
+}
+
+
+   
+  </style>
+
+  <body>
     <div class="navbar">
-        <img
-          style="
-            width: 350px;
-            height: 150px;
-            margin-left: -5px;
-            margin: bottom 2px;
-            margin-top: 19px;
-          "
-          src="images/logo1.png"
-          alt="Dermaliss logo"
-        />
-        <a style="margin-left: 40%" href=":any-link"><button type="">HOME</button></a>
-        <a href="Products.html"><button type="button">PRODUCTS</button></a>
-        <a href="remedies.html"><button type="button">REMEDIES</button></a>
-        <a href="massages.html"><button type="button">MASSAGES</button></a>
-        <a href=":any-link"><button type="button">ABOUT US</button></a>
-      </div>
-  
-      <div class="heading section">
-        <img src="images/homeremediesbg.jpg" alt="background for home remedies" />
-        <h1 class="text-overlay">Home Remedies for Skincare</h1>
-        <h3 class="slogan">
-          From Your Kitchen to Your Skin: Simple Remedies for All
-        </h3>
-      </div>
-  
-    
-</body>
+      
+      
+        <img style="width: 350px;height: 150px;margin-left: -5px;margin: bottom 2px;margin-top: 19px;"src="images/logo1.png"alt="Dermaliss logo"/>
+        
+
+      
+      <a style="margin-left: 35%" href="home.html"
+        ><button type="">HOME</button></a
+      >
+      <a href="Products.html"><button type="button">PRODUCTS</button></a>
+      <a href="remedies.html"><button type="button">REMEDIES</button></a>
+      <a href="massages.html"><button type="button">MASSAGES</button></a>
+      <a href="aboutus.html"><button type="button">ABOUT US</button></a>
+    </div>
+
+    <div class="heading section">
+      
+      <img src="images/homeback1.jpg" alt="">
+      
+      
+    </div>
+
+      <h1 class="text-overlay"></h1>
+      <img class="LOGO" src="images/logo1.png" alt="Dermaliss Logo" />
+      <h3 class="slogan"></h3>
+    </div>
+    <div class="options">
+      <h1 class="offer">What we Offer</h1>
+      <a href="Products.html">
+        <img class="Products" src="images/s2.jpg" alt="Products" />
+      </a>
+      <a href="massages.html">
+        <img class="Massages" src="images/massageslogofin.png" alt="Massages" />
+      </a>
+
+      <a href="remedies.html">
+        <img class="Remedies" src="images/remedies.png" alt="Remedies" />
+      </a>
+    </div>
+  </body>
 </html>
