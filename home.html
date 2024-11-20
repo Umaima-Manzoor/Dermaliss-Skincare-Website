@@ -7,247 +7,262 @@
   </head>
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
 
-    .navbar {
-      font-size: x-small;
-      display: flex;
-      align-items: center;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      background-color: white;
-      z-index: 1000;
-      height: 90px;
-      width: 100%;
-    }
+        .navbar {
+          font-size: x-small;
+          display: flex;
+          align-items: center;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          background-color: white;
+          z-index: 1000;
+          height: 90px;
+          width: 100%;
+        }
 
-    .navbar button {
-      margin: 13px;
-      vertical-align: top;
-      display: flex;
-      border: none;
-      background-color: white;
-      color: #3d5570;
-      transition: background-color 0.15s, padding 0.15s;
-      padding: 7px;
-      cursor: pointer;
-    }
+        .navbar button {
+          margin: 13px;
+          vertical-align: top;
+          display: flex;
+          border: none;
+          background-color: white;
+          color: #3d5570;
+          transition: background-color 0.15s, padding 0.15s;
+          padding: 7px;
+          cursor: pointer;
+        }
 
-    .navbar button:hover {
-      background-color: #2585a0;
-      color: white;
-      padding: 10px;
-      margin: 10px;
-    }
+        .navbar button:hover {
+          background-color: #2585a0;
+          color: white;
+          padding: 10px;
+          margin: 10px;
+        }
 
-    a {
-      text-decoration: none;
-    }
+        a {
+          text-decoration: none;
+        }
 
-    body {
-      padding-top: 90px;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+        body {
+          padding-top: 90px;
+          font-family: Arial, Helvetica, sans-serif;
+        }
 
-    .section {
-      height: 650px;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-    }
+        .section {
+          height: 650px;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+        }
 
-    .heading {
-      position: relative;
-      width: 100%;
-    }
+        .heading {
+          position:relative;
+          width: 100%;
+          animation: changeBackground 10s infinite;
+          background-size: cover;
+          background-position: top;
+          height: 650px;
+          z-index: 1;
 
-    .heading img {
-      width: 100%;
-      height: 650px;
-      object-fit: cover;
-      object-position: top;
-    }
+        }
 
-    .heading::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+        .heading img {
+          width: 100%;
+          height: 650px;
+          object-fit: cover;
+          object-position: top;
+          z-index:1;
+        }
+
+        .heading::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+
+        }
+
+        img.LOGO {
+          height: 300px;
+          width: 400px;
+          margin-left: 450px;
+          margin-bottom: 500px;
+          margin-top: -500px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 10; 
+
+        }
+        img.Products {
+          margin-top: 50px;
+          margin-left: 100px;
+          width: 300px;
+          height: 350px;
+        }
+
+        img.Massages {
+          width: 350px;
+          height: 350px;
+          margin-left: 100px;
+        }
+        img.Remedies {
+          width: 350px;
+          height: 350px;
+          margin-left: 100px;
+        }
+
+        .options {
+          height: 400px;
+          margin-bottom:200px;
+        }
+
+        .options img {
+            margin-top: 30px;
+            margin-left: 100px;
+            transition: transform 0.2s;
+            border-radius: 30px;
+            border: 5px solid #2a3e54;
+          }
+
+          .options img:hover {
+            transform: scale(1.1);
+          }
+
+        h1.offer {
+          margin-top: 70px;
+          text-align: center;
+          font-size: 40px;
+        }
+
       
-      z-index: 10;
-    }
 
-    img.LOGO {
-      height: 300px;
-      width: 400px;
-      margin-left: 450px;
-      margin-bottom: 500px;
-      margin-top: -500px;
-      z-index=1;
-    }
-    img.Products {
-      margin-top: 50px;
-      margin-left: 100px;
-      width: 300px;
-      height: 350px;
-    }
-
-    img.Massages {
-      width: 350px;
-      height: 350px;
-      margin-left: 100px;
-    }
-    img.Remedies {
-      width: 350px;
-      height: 350px;
-      margin-left: 100px;
-    }
-
-    .options {
-      height: 400px;
-      margin-top:-300px;
-      margin-bottom:200px;
-    }
-
-    .options img {
-        margin-top: 30px;
-       
-        margin-left: 100px;
-        transition: transform 0.2s;
-        border-radius: 30px;
-        border: 5px solid #2a3e54;
+        @keyframes changeBackground {
+      0%, 25% {
+        background-image: url("images/homeback1.jpg");
       }
-
-      .options img:hover {
-        transform: scale(1.1);
+      25%, 50% {
+        background-image: url("images/homeback2.jpg");
       }
-
-    h1.offer {
-      margin-top: 70px;
-      text-align: center;
-      font-size: 40px;
+      50%,75%{
+        background-image: url("images/homeback3.jpg");
+      }
+      75%,100%{
+        background-image: url("images/homeback4.jpg");
+      }
     }
 
-    @keyframes changeBackground {
-  0%, 50% {
-    background-image: url("images");
-  }
-  50%, 100% {
-    background-image: url("images/homeback2.jpg"); 
-  }
-}
+    .contact-us {
+          height: 41vh;
+          width: 100%;
+          position: relative;
+          margin: 0;
+          border-top: #3d5570 solid;
+          border-bottom: #3d5570 solid;
+        }
 
-.contact-us {
-      height: 41vh;
-      width: 100%;
-      position: relative;
-      margin: 0;
-      border-top: #3d5570 solid;
-      border-bottom: #3d5570 solid;
-    }
+        .contact-us img {
+          object-fit: cover;
+          object-position: 0% 85%;
+          width: 100%;
+          height: 41vh;
+        }
 
-    .contact-us img {
-      object-fit: cover;
-      object-position: 0% 85%;
-      width: 100%;
-      height: 41vh;
-    }
+        .contact-us::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 103%;
+          background-color: rgba(21, 32, 43, 0.95);
+          z-index: 10;
+        }
 
-    .contact-us::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 103%;
-      background-color: rgba(21, 32, 43, 0.95);
-      z-index: 10;
-    }
+        .text {
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 7vh 5vh 2vh 2vh;
+          width: 100%;
+          z-index: 100;
+        }
 
-    .text {
-      position: absolute;
-      top: 0;
-      left: 0;
-      padding: 7vh 5vh 2vh 2vh;
-      width: 100%;
-      z-index: 100;
-    }
+        .contact {
+          font-size: 2em;
+          margin-top: 0;
+          text-decoration: underline;
+          text-decoration-style: double;
+          position: absolute;
+          margin-left: 43%;
+        }
 
-    .contact {
-      font-size: 2em;
-      margin-top: 0;
-      text-decoration: underline;
-      text-decoration-style: double;
-      position: absolute;
-      margin-left: 43%;
-    }
+        h4 {
+          margin-top: 4vh;
+          margin-bottom: 3vh;
+          font-size: 1.3em;
+          text-decoration: underline;
+        }
 
-    h4 {
-      margin-top: 4vh;
-      margin-bottom: 3vh;
-      font-size: 1.3em;
-      text-decoration: underline;
-    }
+        .col {
+          margin-top: 6vh;
+          display: inline-block;
+          flex-direction: column;
+          height: 20vh;
+          width: 28%;
+          text-align: center;
+        }
 
-    .col {
-      margin-top: 6vh;
-      display: inline-block;
-      flex-direction: column;
-      height: 20vh;
-      width: 28%;
-      text-align: center;
-    }
+        .creators {
+          margin-bottom: 1.2vh;
+        }
 
-    .creators {
-      margin-bottom: 1.2vh;
-    }
+        .Location {
+          text-decoration: none;
+          color: white;
+          vertical-align: top;
+        }
 
-    .Location {
-      text-decoration: none;
-      color: white;
-      vertical-align: top;
-    }
+        .city {
+          width: 130%;
+          margin-left: -8vh;
+        }
 
-    .city {
-      width: 130%;
-      margin-left: -8vh;
-    }
+        .local {
+          float: right;
+          margin-right: 5%;
+        }
 
-    .local {
-      float: right;
-      margin-right: 5%;
-    }
-
-    .emails,
-    .names {
-      margin-left: 8vh;
-    }
-
-
-.heading{
-  animation: changeBackground 5s infinite alternate;
-}
-
-
-   
+        .emails,
+        .names {
+          margin-left: 8vh;
+        }
   </style>
 
   <body>
     <div class="navbar">
-      
-      
-        <img style="width: 350px;height: 150px;margin-left: -5px;margin: bottom 2px;margin-top: 19px;"src="images/logo1.png"alt="Dermaliss logo"/>
-        
+      <img
+        style="
+          width: 350px;
+          height: 150px;
+          margin-left: -5px;
+          margin: bottom 2px;
+          margin-top: 19px;
+        "
+        src="images/logo1.png"
+        alt="Dermaliss logo"
+      />
 
-      
       <a style="margin-left: 35%" href="home.html"
         ><button type="">HOME</button></a
       >
@@ -258,16 +273,10 @@
     </div>
 
     <div class="heading section">
-      
-      <img src="images/homeback1.jpg" alt="">
-      
-      
-    </div>
-
-      <h1 class="text-overlay"></h1>
       <img class="LOGO" src="images/logo1.png" alt="Dermaliss Logo" />
-      <h3 class="slogan"></h3>
+
     </div>
+   
     <div class="options">
       <h1 class="offer">What we Offer</h1>
       <a href="Products.html">
@@ -281,7 +290,6 @@
         <img class="Remedies" src="images/remedies.png" alt="Remedies" />
       </a>
     </div>
-
 
     <div class="contact-us dark_bg">
       <img src="images/contactus2.png" alt="collage" />
@@ -312,7 +320,8 @@
             To Get Our Pin Location,
             <a
               class="Location"
-              href="https://www.google.com/maps/dir//FAST+National+University+Karachi+Campus+St-4,+Sector+17-D+NH+5,+Karachi,+Karachi+City,+Sindh+Pakistan/@24.8568991,67.2646838,15z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3eb3316c5276e35b:0x823a6a0100195ffd" target="_blank"
+              href="https://www.google.com/maps/dir//FAST+National+University+Karachi+Campus+St-4,+Sector+17-D+NH+5,+Karachi,+Karachi+City,+Sindh+Pakistan/@24.8568991,67.2646838,15z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3eb3316c5276e35b:0x823a6a0100195ffd"
+              target="_blank"
               ><u>Click Here</u></a
             >
           </p>
