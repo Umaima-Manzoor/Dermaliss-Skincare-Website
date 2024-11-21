@@ -12,6 +12,8 @@
     <style>
       * {
         margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
 
       body {
@@ -19,9 +21,7 @@
     
       }
 
-      h2 {
-        font-family: "Roboto", serif;
-      }
+      
 
       @keyframes zoomIn {
         0% {
@@ -36,6 +36,9 @@
       }
 
       h1 {
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%, -50%);
         animation: zoomIn 1s ease-out;
       }
 
@@ -49,91 +52,111 @@
         }
       }
 
-      h3.slogan {
+      .slogan {
         animation: fadeIn 1.5s ease-out forwards;
         animation-delay: 1s;
         opacity: 0;
       }
 
-      div.navbar {
-        font-size: x-small;
-        display: flex;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background-color: white;
-        z-index: 1000;
-        height: 90px;
-        width: 100%;
-    
-      }
+      .navbar {
+      font-size: x-small;
+      display: flex;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: white;
+      z-index: 1000;
+      height: 13vh;
+      width: 100%;
+    }
 
-      .navbar button {
-        margin: 13px;
-        vertical-align: top;
-        display: flex;
-        border: none;
-        background-color: white;
-        color: #3d5570;
-        transition: background-color 0.15s, padding 0.15s;
-        padding: 7px;
-        cursor: pointer;
-      }
+    .navbar button {
+      margin: 0.5vw;
+      vertical-align: top;
+      display: flex;
+      border: none;
+      background-color: white;
+      color: #3d5570;
+      transition: background-color 0.2s, transform 0.2s;
+      padding: 1.4vh;
+      cursor: pointer;
+    }
 
-      .navbar button:hover {
-        background-color: #2585a0;
-        color: white;
-        padding: 10px;
-        margin: 10px;
-      }
+    .navbar button:hover {
+      background-color: #2585a0;
+      color: white;
+      transform: scale(1.1);
+    }
 
-      a {
-        text-decoration: none;
-      }
+    a {
+      text-decoration: none;
+    }
 
       h2 {
-        font-size: 30px;
+        font-size: 2em;
       }
 
       h1 {
         font-family: "Raleway", sans-serif;
-        font-size: 60px;
+        font-size: 4em;
       }
 
       .heading {
-        margin-top: 90px;
+        margin-top: 10vh;
         text-align: center;
         color: #fff;
         background-color: #2a3e54;
         padding: 200px;
         background-color: rgba(42, 62, 84, 0.8);
         background-blend-mode: overlay;
-        height: 150px;
-        opacity: 1.0;
-        z-index:0;
+        height: 90vh;
+        opacity: 1;
+        z-index: 0;
         position:relative;
         animation:changeBackground 12s infinite;
         animation-delay: 2s;
         transition: background-image 3s ease-in-out, opacity 1s ease-in-out;
        
       }
+      @keyframes changeBackground {
+  0%{
+    background-image: url(images/blue\ roller\ jade.png);
+    opacity: 0.5;
+  }
+  25%{
+    background-image: url(images/blue\ roller\ jade.png);
+    opacity: 1;
+  }
+
+
+ 25%,50%{
+    background-image: url(images/blue\ guashatool.png);
+    opacity:1;
+    
+  }
+  
+  50%,75% {
+    background-image: url(images/iceglobes.jpg);
+    opacity:1;
+  }
+  
+  75%, 100% {
+    background-image: url(images/kansawand.jfif);
+    opacity:1;
+    transition: opacity 1s ease-in-out; 
+  }
+}
 
       .heading::after {
         content: "";
-    
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(
-          42,
-          62,
-          84,
-          0.7
-        );
+        background-color: rgba(42, 62, 84, 0.7);
         z-index: -1; 
       }
 
@@ -171,6 +194,10 @@
 
       .maindown img:hover {
         transform: scale(1.17);
+      }
+
+      h2 {
+        font-family: "Roboto", serif;
       }
 
       div.guasha {
@@ -217,53 +244,29 @@
         color: #ffffff;
       }
 
-      @keyframes changeBackground {
-  0%{
-    background-image: url(images/blue\ roller\ jade.png);
-    opacity: 0.5;
-  }
-  25%{
-    background-image: url(images/blue\ roller\ jade.png);
-    opacity: 1;
-  }
 
 
- 25%,50%{
-    background-image: url(images/blue\ guashatool.png);
-    opacity:1;
-    
-  }
-  
-  50%,75% {
-    background-image: url(images/iceglobes.jpg);
-    opacity:1;
-  }
-  
-  75%, 100% {
-    background-image: url(images/kansawand.jfif);
-    opacity:1;
-    transition: opacity 1s ease-in-out; 
-  }
 
+.dark_bg {
+  color: white;
 }
 
 .contact-us {
-      height: 300px;
+      height: 41vh;
       width: 100%;
       position: relative;
       margin: 0;
       border-top: #3d5570 solid;
       border-bottom: #3d5570 solid;
-
     }
-    
+
     .contact-us img {
       object-fit: cover;
       object-position: 0% 85%;
       width: 100%;
-      height: 300px;
+      height: 41vh;
     }
-    
+
     .contact-us::after {
       content: "";
       position: absolute;
@@ -274,71 +277,65 @@
       background-color: rgba(21, 32, 43, 0.95);
       z-index: 10;
     }
-    
-    .text{
+
+    .text {
       position: absolute;
       top: 0;
       left: 0;
-      padding: 40px 20px 20px 20px; 
+      padding: 7vh 5vh 2vh 2vh;
       width: 100%;
       z-index: 100;
     }
-    
+
     .contact {
-      font-size: 30px;
+      font-size: 2em;
       margin-top: 0;
       text-decoration: underline;
-      text-decoration-style:double;
+      text-decoration-style: double;
       position: absolute;
       margin-left: 43%;
     }
 
-
     h4 {
-      margin-top: 40px;
-      margin-bottom: 20px;
-      font-size: 19px;
+      margin-top: 4vh;
+      margin-bottom: 3vh;
+      font-size: 1.3em;
       text-decoration: underline;
-      
     }
 
     .col {
-      margin-top: 50px;
-      margin-left: 30px;
+      margin-top: 6vh;
       display: inline-block;
       flex-direction: column;
-      height: 180px;
+      height: 20vh;
       width: 28%;
       text-align: center;
     }
 
-
     .creators {
-      margin-bottom: 10px;
-
+      margin-bottom: 1.2vh;
     }
 
     .Location {
       text-decoration: none;
       color: white;
       vertical-align: top;
-      
     }
 
     .city {
       width: 130%;
-      margin-left: -60px;
+      margin-left: -4vw;
     }
 
     .local {
-      float: right; 
+      float: right;
       margin-right: 5%;
     }
 
-    .emails, .names {
-      margin-left: 50px;
+    .emails,
+    .names {
+      margin-left: 4vw;
     }
-
 
       
 
@@ -348,24 +345,17 @@
   <body>
     <div class="navbar">
       <img
-        style="
-          width: 350px;
-          height: 150px;
-          margin-left: -5px;
-          margin: bottom 2px;
-          margin-top: 19px;
-        "
-        ;
+        style="width: 20vw; height: 20vh; margin-top: 2.5vh"
         src="images/logo1.png"
-        alt="DermaLiss"
+        alt="Dermaliss logo"
       />
-
-      <a style="margin-left: 35%" href="home.html"><button type="">HOME</button></a
->
-      <a href="Products.html"><button type="">PRODUCTS</button></a>
-      <a href="remedies.html"><button type="">REMEDIES</button></a>
-      <a href="massages.html"><button type="">MASSAGES</button></a>
-      <a href=""><button type="">ABOUT US</button></a>
+      <a style="margin-left: 40%" href="home.html"
+        ><button type="">HOME</button></a
+      >
+      <a href="Products.html"><button type="button">PRODUCTS</button></a>
+      <a href="remedies.html"><button type="button">REMEDIES</button></a>
+      <a href="massages.html"><button type="button">MASSAGES</button></a>
+      <a href=":any-link"><button type="button">ABOUT US</button></a>
     </div>
 
    
