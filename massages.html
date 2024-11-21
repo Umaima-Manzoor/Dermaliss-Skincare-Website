@@ -25,7 +25,7 @@
 
       @keyframes zoomIn {
         0% {
-          transform: scale(0.5);
+          transform: scale(0);
           opacity: 0;
         }
 
@@ -36,8 +36,7 @@
       }
 
       h1 {
-        top: 60%;
-        left: 50%;
+        margin-top: 8vh;
         transform: translateX(-50%, -50%);
         animation: zoomIn 1s ease-out;
       }
@@ -161,35 +160,44 @@
       }
 
       .main {
-        height: 300px;
+        height: 30vh;
+        padding-top: 10vh;
       }
 
       div.main img {
+
+        margin-left: 50vw;
         margin-top: 30px;
-        height: 250px;
-        width: 230px;
         margin-left: 100px;
         transition: transform 0.2s;
         border-radius: 50px;
-        border: 10px solid #2a3e54;
+        
       }
-
+      
       .main img:hover {
         transform: scale(1.17);
       }
-
+      
       .maindown img {
         margin-left: 100px;
-        height: 230px;
-        width: 230px;
+        
         border-radius: 50px;
         border: 10px solid #2a3e54;
         transition: transform 0.2s;
       }
 
       .maindown {
-        margin-top: 30px;
-        height: 350px;
+        margin-top: 10vh;
+        height: 50vh;
+      }
+
+      .main img, .maindown img {
+        object-fit:scale-down;
+        object-position: center;
+        background-color: white;
+        height: 35vh;
+        width: 19vw;
+        border: 1.5vh solid #2a3e54;
       }
 
       .maindown img:hover {
@@ -368,7 +376,7 @@
 
     <div class="main">
       <img
-        style="height: 240px; width: 220px; margin-left: 200px"
+       
         src="images/blue guashatool.png"
         alt="Guashatool"
         onclick="navigateToSection('guasha-massage')"
@@ -691,4 +699,3 @@
     <script src="scroll.js"></script>
   </body>
 </html>
-
