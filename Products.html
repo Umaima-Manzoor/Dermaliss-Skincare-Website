@@ -64,7 +64,7 @@
         overflow: hidden;
         margin-top: 10vh;
     }
-
+    
     .topBar img {
         position: absolute;
         width: 100%;
@@ -72,42 +72,39 @@
         overflow: hidden;
         object-fit: cover;
         opacity: 0;
+        z-index: 1;
         transition: opacity 0.5s;
     }
     
     .topBar:hover img {
         opacity: 1;
     }
+
+    .textContainer {
+        position: relative;
+        font-weight: bold;
+        color: #ffffff;
+        text-align: center;
+        z-index: 1;
+        transition: color 0.5s;
+        pointer-events: none;
+    }
     
     
     .textContainer h1 {
-        position: relative;
         font-size: 4em;
-        font-weight: bold;
-        color: #ffffff;
-        text-align: center;
-        z-index: 1;
-        transition: opacity 0.5s;
     }
     
-    .textContainer:hover h1 {
-    color: #2a3e54;
-    }
-
-    .textContainer .slogan:hover {
-    color: #2a3e54;
-    }
-
     .textContainer .slogan {
-        position: relative;
-        font-weight: bold;
-        color: #ffffff;
         font-size: 1.25em;
-        text-align: center;
-        z-index: 1;
-        transition: opacity 0.5s;
     
 }
+    .topBar:hover .textContainer{
+        color: #3d5570;
+    }
+
+    
+
     .allProducts {
         display: flex;
         flex-wrap: wrap;
@@ -346,7 +343,7 @@
     <div class="topBar">
         <img src="images/Bar image.jpg" alt="Product Preview Image">
         <div class="textContainer">
-        <h1>PRODUCTS</h1>
+        <h1 class="heading">PRODUCTS</h1>
         <h3 class="slogan">Feel the Difference, See the Glow</h3>
     </div>
     </div>
@@ -626,4 +623,4 @@
             </script>
     
 </body>
-</html
+</html>
