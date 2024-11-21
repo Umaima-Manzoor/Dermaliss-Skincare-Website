@@ -80,7 +80,7 @@
     }
     
     
-    .topBar h1 {
+    .textContainer h1 {
         position: relative;
         font-size: 4em;
         font-weight: bold;
@@ -90,10 +90,24 @@
         transition: opacity 0.5s;
     }
     
-    .topBar:hover h1 {
+    .textContainer:hover h1 {
     color: #2a3e54;
     }
 
+    .textContainer .slogan:hover {
+    color: #2a3e54;
+    }
+
+    .textContainer .slogan {
+        position: relative;
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 1.25em;
+        text-align: center;
+        z-index: 1;
+        transition: opacity 0.5s;
+    
+}
     .allProducts {
         display: flex;
         flex-wrap: wrap;
@@ -330,8 +344,11 @@
     </div>
 
     <div class="topBar">
-        <h1>PRODUCTS</h1>
         <img src="images/Bar image.jpg" alt="Product Preview Image">
+        <div class="textContainer">
+        <h1>PRODUCTS</h1>
+        <h3 class="slogan">Feel the Difference, See the Glow</h3>
+    </div>
     </div>
 
 
