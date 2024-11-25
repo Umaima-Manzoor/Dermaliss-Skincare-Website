@@ -13,38 +13,38 @@
           box-sizing: border-box;
         }
 
-        .navbar {
-          font-size: x-small;
-          display: flex;
-          align-items: center;
-          position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
-          background-color: white;
-          z-index: 1000;
-          height: 90px;
-          width: 100%;
-        }
+        
+    .navbar {
+      font-size: x-small;
+      display: flex;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: white;
+      z-index: 1000;
+      height: 13vh;
+      width: 100%;
+    }
 
-        .navbar button {
-          margin: 13px;
-          vertical-align: top;
-          display: flex;
-          border: none;
-          background-color: white;
-          color: #3d5570;
-          transition: background-color 0.15s, padding 0.15s;
-          padding: 7px;
-          cursor: pointer;
-        }
+    .navbar button {
+      margin: 0.5vw;
+      vertical-align: top;
+      display: flex;
+      border: none;
+      background-color: white;
+      color: #3d5570;
+      transition: background-color 0.2s, transform 0.2s;
+      padding: 1.4vh;
+      cursor: pointer;
+    }
 
-        .navbar button:hover {
-          background-color: #2585a0;
-          color: white;
-          padding: 10px;
-          margin: 10px;
-        }
+    .navbar button:hover {
+      background-color: #2585a0;
+      color: white;
+      transform: scale(1.1);
+    }
 
         a {
           text-decoration: none;
@@ -256,18 +256,11 @@
   <body>
     <div class="navbar">
       <img
-        style="
-          width: 350px;
-          height: 150px;
-          margin-left: -5px;
-          margin: bottom 2px;
-          margin-top: 19px;
-        "
+        style="width: 20vw; height: 20vh; margin-top: 2.5vh"
         src="images/logo1.png"
         alt="Dermaliss logo"
       />
-
-      <a style="margin-left: 35%" href="home.html"
+      <a style="margin-left: 40%" href="home.html"
         ><button type="">HOME</button></a
       >
       <a href="Products.html"><button type="button">PRODUCTS</button></a>
