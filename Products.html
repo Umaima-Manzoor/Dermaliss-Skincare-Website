@@ -33,7 +33,6 @@
     .navbar button {
       margin: 0.5vw;
       vertical-align: top;
-      display: flex;
       border: none;
       background-color: white;
       color: #3d5570;
@@ -61,7 +60,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        overflow: hidden;
         margin-top: 10vh;
     }
     
@@ -69,7 +67,6 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        overflow: hidden;
         object-fit: cover;
         opacity: 0;
         z-index: 1;
@@ -175,7 +172,6 @@
 
     .ingredients {
         margin-right: 10vh;
-        text-align: center;
     }
 
     .imgstyle {
@@ -209,7 +205,6 @@
         z-index: 20;
         pointer-events: none;
         padding: 15vh;
-        background-color: rgba(255, 255, 255, 0);
         opacity: 0;
         border-radius: 2vh;
         border: 1.3vh solid #2a3e54;
@@ -222,7 +217,7 @@
     }
 
     .image:hover {
-        transform: rotateX(180deg);
+        transform: rotateY(180deg);
     }
 
 
@@ -234,7 +229,6 @@
       height: 41vh;
       width: 100%;
       position: relative;
-      margin: 0;
       border-top: #3d5570 solid;
       border-bottom: #3d5570 solid;
     }
@@ -253,7 +247,7 @@
       left: 0;
       width: 100%;
       height: 103%;
-      background-color: rgba(21, 32, 43, 0.95);
+      background-color: rgba(21, 32, 43, 0.9);
       z-index: 10;
     }
 
@@ -296,9 +290,7 @@
     }
 
     .Location {
-      text-decoration: none;
       color: white;
-      vertical-align: top;
     }
 
     .city {
