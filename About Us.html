@@ -6,6 +6,12 @@
     <title>About Us</title>
 </head>
 <style>
+     * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
      .navbar {
       font-size: x-small;
       display: flex;
@@ -44,13 +50,12 @@
     .topBar {
     position: relative;
     width: 100%;
-    height: 91vh;
+    height: 90vh;
     background-color: rgb(61, 85, 112); 
     display: flex;
     align-items: center;
     justify-content: center;
-    /* overflow: hidden; */
-    margin-top: 100px;
+    margin-top: 10vh;
 }
 
 .topBar img {
@@ -145,9 +150,6 @@ body {
 }
 
 .info-section {
-    /* display: flex; 
-    justify-content: space-between;  */
-    /* align-items: center;  */
     background-color: #3d5570; 
     padding: 50px 10%; 
     width: 100%; 
@@ -237,28 +239,117 @@ body {
 }
 
 
+
+.contact-us {
+      height: 41vh;
+      width: 100%;
+      position: relative;
+      border-top: #3d5570 solid;
+      border-bottom: #3d5570 solid;
+    }
+
+    .contact-us img {
+      object-fit: cover;
+      object-position: 0% 85%;
+      width: 100%;
+      height: 41vh;
+    }
+
+    .contact-us::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 103%;
+      background-color: rgba(21, 32, 43, 0.9);
+      z-index: 10;
+    }
+
+    .the_text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 7vh 5vh 2vh 2vh;
+      width: 100%;
+      z-index: 100;
+    }
+
+    .contact {
+      font-size: 2em;
+      margin-top: 0;
+      text-decoration: underline;
+      text-decoration-style: double;
+      position: absolute;
+      margin-left: 43%;
+    }
+
+    h4 {
+      margin-top: 4vh;
+      margin-bottom: 3vh;
+      font-size: 1.3em;
+      text-decoration: underline;
+    }
+
+    .col {
+      margin-top: 6vh;
+      display: inline-block;
+      flex-direction: column;
+      height: 20vh;
+      width: 28%;
+      text-align: center;
+    }
+
+    .creators {
+      margin-bottom: 1.2vh;
+    }
+
+    .Location {
+      color: white;
+    }
+
+    .city {
+      width: 130%;
+      margin-left: -8vh;
+    }
+
+    .local {
+      float: right;
+      margin-right: 5%;
+    }
+
+    .emails,
+    .names {
+      margin-left: 8vh;
+    }
+
+    .dark_bg {
+        color: #FFFFFF;
+    }
+
+
 </style>
 <body>
-    <div class="navbar"> 
+    <div class="navbar">
         <img
-          style="width: 20vw; height: 20vh; margin-top: 2.5vh"
-          src="images/logo1.png"
-          alt="Dermaliss logo"
-        />
-        <a style="margin-left: 40%" href="home.html"
-          ><button type="">HOME</button></a
-        >
-        <a href="Products.html"><button type="button">PRODUCTS</button></a>
-        <a href="remedies.html"><button type="button">REMEDIES</button></a>
-        <a href="massages.html"><button type="button">MASSAGES</button></a>
-        <a href="About Us.html"><button type="button">ABOUT US</button></a>
-      </div>
-  
+        style="width: 48vh; height: 20vh; margin-top: 2.5vh"
+        src="images/logo1.png"
+        alt="Dermaliss logo"
+      />
+      <a style="margin-left: 40%" href="home.html"
+      ><button type="">HOME</button></a
+    >
+        <a href="Products.html"><button type="">PRODUCTS</button></a>
+        <a href="remedies.html"><button type="">REMEDIES</button></a>
+        <a href="massages.html"><button type="">MASSAGES</button></a>
+        <a href="About Us.html"><button type="">ABOUT US</button></a>
+    </div>
+
     <div class="topBar">
         <img src="images/contactus2.png" alt="Background For About Us" />
     <div class="textContainer">
         <h1>ABOUT US</h1>
-        <h3 class="slogan">Where Radiance Meets Care–Your Skin, Our Priority.</h3>
+        <h3 class="slogan">Where Radiance Meets Care-Your Skin, Our Priority.</h3>
         </div>
       </div>
 
@@ -347,7 +438,45 @@ body {
             </div>
         </div>
     </section>
-    <br><br><br>
+    <br><br><br><br><br>
+
+    <div class="contact-us dark_bg">
+        <img src="images/contactus2.png" alt="collage" />
+        <div class="the_text">
+          <h3 class="contact">Contact Us</h3>
+          <div class="col names">
+            <h4>Created by:</h4>
+            <p class="creators">Umaima Manzoor Roll-No (24K-0501)</p>
+            <p class="creators">Maryam Saleem Roll-No (24K-0779)</p>
+            <p class="creators">Aiman Misbah Roll-No (24K-0842)</p>
+          </div>
+  
+          <div class="col emails">
+            <h4>Email Addresses:</h4>
+            <p class="creators">k240501@nu.edu.pk</p>
+            <p class="creators">k240779@nu.edu.pk</p>
+            <p class="creators">k240842@nu.edu.pk</p>
+          </div>
+  
+          <div class="col local">
+            <h4>Location:</h4>
+            <p class="creators">Main Campus: St-4, Sector 17-D, NH 5, Karachi</p>
+            <p class="creators city">
+              City Campus: 22-g block, 6, Shahrah-e-Faisal Block 6 P.E.C.H.S.,
+              Karachi
+            </p>
+            <p class="creators">
+              To Get Our Pin Location,
+              <a
+                class="Location"
+                href="https://www.google.com/maps/dir//FAST+National+University+Karachi+Campus+St-4,+Sector+17-D+NH+5,+Karachi,+Karachi+City,+Sindh+Pakistan/@24.8568991,67.2646838,15z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3eb3316c5276e35b:0x823a6a0100195ffd"
+                target="_blank"
+                ><u>Click Here</u></a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
 
 
     <script src="scroll.js"></script>
