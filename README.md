@@ -1,27 +1,84 @@
 <div align="center">
 
-<img src="images/branding/logo1.png" alt="Dermaliss" width="420">
+<br>
+
+<img src="images/branding/logo1.png" alt="Dermaliss" width="430">
 
 <h3><em>Revive your skin, transform your life.</em></h3>
 
-<p><strong>A multi-page skincare website built with HTML, CSS, and JavaScript.</strong></p>
+<p>
+  <strong>A multi-page skincare website built with HTML, CSS, and JavaScript.</strong>
+</p>
+
+<br>
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)
 ![License](https://img.shields.io/badge/License-MIT-3d5570?style=for-the-badge)
 
-<p>
-  <a href="#-preview">Preview</a> ·
-  <a href="#-about-dermaliss">About</a> ·
-  <a href="#-team">Team</a> ·
-  <a href="#-interactive-experience">Interactions</a> ·
-  <a href="#-visual-identity">Design</a> ·
-  <a href="#-technologies">Technologies</a> ·
-  <a href="#-running-dermaliss">Run it</a>
-</p>
+<br>
+
+<table>
+<tr>
+<td align="center"><strong>🧴 PRODUCTS</strong></td>
+<td align="center"><strong>🌿 REMEDIES</strong></td>
+<td align="center"><strong>💆 MASSAGES</strong></td>
+<td align="center"><strong>✦ BRAND</strong></td>
+</tr>
+</table>
+
+<br>
+
+<a href="#-preview">
+  <strong>EXPLORE THE EXPERIENCE ↓</strong>
+</a>
+
+<br><br>
 
 </div>
+
+---
+
+## ✦ The Dermaliss Experience
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🧴 Discover
+
+Explore a curated collection of skincare products with information about their benefits, ingredients, and directions.
+
+</td>
+
+<td width="50%" valign="top">
+
+### 🌿 Explore
+
+Browse ingredient-based home remedies presented through an image-driven, skincare-focused interface.
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+### 💆 Unwind
+
+Discover facial massage techniques through interactive image selectors and visual transitions.
+
+</td>
+
+<td width="50%" valign="top">
+
+### ✨ Experience
+
+Move through a cohesive multi-page interface built around consistent navigation, imagery, animation, and branding.
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -33,14 +90,14 @@
 
 <img src="screenshots/home.png" alt="Dermaliss home page" width="100%">
 
-<strong>Home</strong>
+<strong>HOME</strong>
 
 </td>
 <td align="center" width="50%">
 
 <img src="screenshots/products.png" alt="Dermaliss products page" width="100%">
 
-<strong>Products</strong>
+<strong>PRODUCTS</strong>
 
 </td>
 </tr>
@@ -50,14 +107,14 @@
 
 <img src="screenshots/remedies.png" alt="Dermaliss remedies page" width="100%">
 
-<strong>Remedies</strong>
+<strong>REMEDIES</strong>
 
 </td>
 <td align="center" width="50%">
 
 <img src="screenshots/massages.png" alt="Dermaliss massages page" width="100%">
 
-<strong>Massages</strong>
+<strong>MASSAGES</strong>
 
 </td>
 </tr>
@@ -65,15 +122,21 @@
 <tr>
 <td colspan="2" align="center">
 
-<img src="screenshots/about.png" alt="Dermaliss about us page" width="60%">
+<img src="screenshots/about.png" alt="Dermaliss about us page" width="68%">
 
 <br>
 
-<strong>About Us</strong>
+<strong>ABOUT US</strong>
 
 </td>
 </tr>
 </table>
+
+<div align="center">
+
+<em>Five pages · One visual identity · One connected experience</em>
+
+</div>
 
 ---
 
