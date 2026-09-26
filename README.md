@@ -1,14 +1,8 @@
 <div align="center">
 
-<div align="center">
-  <img
-    src="images/branding/logo1.png"
-    alt="Dermaliss"
-    width="700"
-    height="180"
-    style="object-fit: cover; object-position: center;"
-  >
-</div>
+<p align="center">
+  <img src="images/branding/logo1.png" alt="Dermaliss" width="650">
+</p>
 
 # Dermaliss
 
