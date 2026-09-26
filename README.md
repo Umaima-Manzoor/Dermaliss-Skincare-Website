@@ -493,7 +493,7 @@ Complete Front-end Experience
 
 <br>
 
-<img src="images/branding/logo1.png.svg" alt="Dermaliss" width="420">
+<img src="images/branding/logo1.png" alt="Dermaliss" width="420">
 
 ### *Revive your skin, transform your life.*
 
