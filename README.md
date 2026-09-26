@@ -2,7 +2,7 @@
 
 <img src="images/branding/logo1.png" alt="Dermaliss" width="420">
 
-# DERmaliss
+# Dermaliss
 
 ### *Revive your skin, transform your life.*
 
@@ -349,7 +349,6 @@ Dermaliss-Skincare-Website/
     │   └── homeremediesbg.jpg
     │
     ├── branding/
-    │   ├── Logo with Slogan.png
     │   ├── Logo.psd
     │   ├── logo1-removebg-preview.png
     │   ├── logo1.png
