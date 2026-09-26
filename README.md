@@ -273,7 +273,7 @@ The primary navigation connects:
 This repeated structure provides consistency as visitors move between the different sections.
 
 <p align="center">
-  <img src="images/branding/logo1.png" alt="Dermaliss" width="420">
+  <img src="images/branding/logo-readme.svg" alt="Dermaliss" width="420">
 </p>
 
 ---
@@ -493,7 +493,7 @@ Complete Front-end Experience
 
 <br>
 
-<img src="images/branding/logo1.png" alt="Dermaliss" width="420">
+<img src="images/branding/logo-readme.svg" alt="Dermaliss" width="420">
 
 ### *Revive your skin, transform your life.*
 

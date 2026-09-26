@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="420"
+     height="120"
+     viewBox="0 0 420 120">
+
+  <defs>
+    <clipPath id="zoom">
+      <rect width="420" height="120"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#zoom)">
+    <image
+      href="logo1.png"
+      x="-105"
+      y="-30"
+      width="630"
+      height="180"
+      preserveAspectRatio="xMidYMid meet"
+    />
+  </g>
+
+</svg>
