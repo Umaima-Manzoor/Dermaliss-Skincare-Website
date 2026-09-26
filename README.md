@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="images/branding/Logo with Slogan.png" alt="Dermaliss — Revive your skin, transform your life." width="520">
+<img src="images/branding/logo1.png" alt="Dermaliss" width="420">
 
 # DERmaliss
 
@@ -271,7 +271,7 @@ The primary navigation connects:
 This repeated structure provides consistency as visitors move between the different sections.
 
 <p align="center">
-  <img src="images/branding/Logo with Slogan.png" alt="Dermaliss branding" width="420">
+  <img src="images/branding/logo1.png" alt="Dermaliss" width="420">
 </p>
 
 ---
@@ -492,7 +492,7 @@ Complete Front-end Experience
 
 <br>
 
-<img src="images/branding/Logo with Slogan.png" alt="Dermaliss" width="360">
+<img src="images/branding/logo1.png" alt="Dermaliss" width="420">
 
 ### *Revive your skin, transform your life.*
 
