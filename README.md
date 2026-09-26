@@ -1,84 +1,131 @@
-# Dermaliss
+<div align="center">
 
-<p align="center">
-  <img src="images/Logo with Slogan.png" alt="Dermaliss Logo" width="600">
-</p>
+<img src="images/Logo with Slogan.png" alt="Dermaliss" width="500">
 
-<p align="center">
-  <strong>Revive your skin, transform your life.</strong>
-</p>
+### Revive your skin, transform your life.
 
-<p align="center">
-  A front-end skincare website centred around skincare products, home remedies, facial massages, and the Dermaliss brand.
-</p>
+**A multi-page front-end skincare website built with HTML, CSS, and JavaScript.**
+
+<br>
+
+[🌸 Website](#-the-website) · [✨ Interactions](#-interactive-experience) · [🎨 Design](#-visual-identity) · [🛠 Technologies](#-technologies)
+
+</div>
 
 ---
 
 ## ✦ Preview
 
 <p align="center">
-  <img src="images/homeback1.jpg" alt="Dermaliss Website Preview" width="850">
+  <img src="docs/demo/homepage.gif" alt="Dermaliss website preview" width="900">
 </p>
 
-> A screenshot of the rendered website can be placed here to showcase the completed interface.
+<p align="center">
+  <em>A short walkthrough of the Dermaliss homepage and its visual interactions.</em>
+</p>
+
+> **README asset:** `docs/demo/homepage.gif`
 
 ---
 
-## About the Project
+## 🌸 About Dermaliss
 
-**Dermaliss** is a multi-page skincare website developed as an academic front-end web development project.
+**Dermaliss** is a skincare website developed as an academic front-end web development project.
 
-The website brings several skincare-focused sections together in one interface, allowing visitors to explore:
+The website brings together several skincare-focused experiences under one visual identity:
 
-* 🧴 Skincare products
-* 🌿 Home remedies
-* 💆 Facial massage techniques
-* ✦ The Dermaliss story, vision, and promise
+<table>
+<tr>
+<td align="center" width="25%">
 
-The project focuses on visual presentation, navigation, imagery, hover interactions, animations, and consistent branding across its pages.
+### 🧴
+
+**Products**
+
+Explore skincare products with benefits, ingredients, directions, and interactive product imagery.
+
+</td>
+<td align="center" width="25%">
+
+### 🌿
+
+**Remedies**
+
+Explore ingredient-based skincare remedies with supporting imagery and instructions.
+
+</td>
+<td align="center" width="25%">
+
+### 💆
+
+**Massages**
+
+Learn about different facial massage techniques through visual guides and step-by-step directions.
+
+</td>
+<td align="center" width="25%">
+
+### ✦
+
+**About Us**
+
+Discover the Dermaliss story, vision, promise, and project creators.
+
+</td>
+</tr>
+</table>
 
 ---
 
-## 🌸 Website Pages
+# 🌸 The Website
 
-| Page         | Description                                                                                       |
-| ------------ | ------------------------------------------------------------------------------------------------- |
-| **Home**     | Introduces Dermaliss and provides navigation to the main sections of the website.                 |
-| **Products** | Presents skincare products with their benefits, ingredients, directions, and interactive imagery. |
-| **Remedies** | Presents home-skincare content using commonly used ingredients and supporting visuals.            |
-| **Massages** | Introduces facial massage techniques with benefits, directions, and imagery.                      |
-| **About Us** | Presents the Dermaliss story, vision, promise, and information about the project creators.        |
+Dermaliss is organised into five main pages, each serving a different part of the skincare experience.
+
+### Home
+
+<p align="center">
+  <img src="docs/screenshots/home.png" alt="Dermaliss home page" width="800">
+</p>
+
+The landing page introduces the Dermaliss brand and directs visitors towards the main skincare sections.
+
+Its hero area uses a changing background sequence, followed by a **What We Offer** section linking to Products, Massages, and Remedies.
 
 ---
 
-## 🧴 Products
+### Products
+
+<p align="center">
+  <img src="docs/screenshots/products.png" alt="Dermaliss products page" width="800">
+</p>
 
 The Products page presents five skincare products:
 
-* **Laneige Water Sleeping Mask**
-* **CeraVe Hydrating Hyaluronic Acid Serum**
-* **The Ordinary Glycolic Acid 7% Toning Solution**
-* **La Roche-Posay Effaclar Duo (+)**
-* **Fresh Sugar Lip Treatment Advanced Therapy**
+* Laneige Water Sleeping Mask
+* CeraVe Hydrating Hyaluronic Acid Serum
+* The Ordinary Glycolic Acid 7% Toning Solution
+* La Roche-Posay Effaclar Duo (+)
+* Fresh Sugar Lip Treatment Advanced Therapy
 
-Each product includes information such as:
+Each product provides:
 
-* Benefits
-* Ingredients
-* Directions
-* Product imagery
+**Benefits · Ingredients · Directions**
 
-The product cards use hover interactions, while the product images include a rotation effect that reveals additional information.
+The product imagery also uses an interactive rotation effect to reveal additional information.
 
-> The Products page functions as a **product presentation/catalogue**. This project does not implement shopping carts, checkout, payment processing, user accounts, or online ordering.
+<p align="center">
+  <img src="docs/demo/product-interaction.gif" alt="Dermaliss product interaction" width="700">
+</p>
 
 ---
 
-## 🌿 Home Remedies
+### Remedies
 
-The Remedies page presents skincare content based around commonly used ingredients and home treatments.
+<p align="center">
+  <img src="docs/screenshots/remedies.png" alt="Dermaliss remedies page" width="800">
+</p>
 
-### Featured remedies
+The Remedies page features:
 
 * 🍯 Honey-Coffee Face Mask
 * 🍚 Rice Toner
@@ -86,103 +133,184 @@ The Remedies page presents skincare content based around commonly used ingredien
 * 🥒 Cucumber Hydration Therapy
 * 🍌 Gram Flour and Banana Mask
 
-Each remedy combines written content with ingredient imagery, directions, benefits, and additional tips where applicable.
+The sections combine written information, ingredient imagery, directions, benefits, and additional tips where applicable.
 
 ---
 
-## 💆 Massages
+### Massages
 
-The Massages page introduces several facial massage techniques:
+<p align="center">
+  <img src="docs/screenshots/massages.png" alt="Dermaliss massages page" width="800">
+</p>
 
-* **Guasha Massage**
-* **Roller Massage**
-* **Sculpting Massage**
-* **Kansa Massage**
-* **Ice Globe Massage**
+The Massages page introduces:
 
-Each section provides information about the technique, its stated benefits, and step-by-step directions alongside supporting imagery.
+* Guasha Massage
+* Roller Massage
+* Sculpting Massage
+* Kansa Massage
+* Ice Globe Massage
 
-The page also uses image-based navigation to help users move between the different massage sections.
+Image-based selectors allow visitors to move between the different massage techniques.
 
 ---
 
-## ✦ Interactive Design
+### About Us
 
-Although **Dermaliss-Skincare-Website** is a static front-end project, interaction plays an important role in the interface.
+<p align="center">
+  <img src="docs/screenshots/about.png" alt="Dermaliss about page" width="800">
+</p>
 
-### Smooth Navigation
+The About Us page presents the Dermaliss:
 
-The shared `scroll.js` file provides smooth navigation to specific sections of a page while accounting for the fixed navigation bar.
+**Story · Vision · Promise**
 
-### Hover Effects
+It also contains the project creators' contact information and location details.
 
-Hover interactions are used throughout the website for elements such as:
+---
+
+# ✨ Interactive Experience
+
+Dermaliss is a static website, but it was designed to feel interactive rather than simply presenting a collection of HTML pages.
+
+## Smooth Navigation
+
+A shared JavaScript function handles navigation to specific sections of a page.
+
+The scroll position is adjusted to account for the fixed navigation bar, creating a smoother browsing experience.
+
+```javascript
+function navigateToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+        window.scrollTo({
+            top: section.offsetTop - 90,
+            behavior: 'smooth'
+        });
+    }
+}
+```
+
+---
+
+## Hover Interactions
+
+Hover effects are used throughout the website for:
 
 * Navigation buttons
 * Product cards
-* Product images
+* Product imagery
 * Remedy imagery
 * Massage selectors
-* Other visual elements
+* Interactive visual elements
 
-### Animations
-
-CSS animations and transitions are used for:
-
-* Background image changes
-* Fade effects
-* Zoom effects
-* Slide effects
-* Image opacity transitions
-* Hover transformations
-
-These effects add movement to the interface while keeping the content as the main focus.
+<p align="center">
+  <img src="docs/demo/hover-interactions.gif" alt="Dermaliss hover interactions" width="800">
+</p>
 
 ---
 
-## 🎨 Visual Identity
+## Product Image Interaction
 
-Dermaliss uses a consistent skincare-oriented visual identity throughout the website.
+The product page uses a rotation effect to transform the product image and reveal additional information.
 
-### Colour Palette
+<p align="center">
+  <img src="docs/demo/product-interaction.gif" alt="Product image rotation interaction" width="700">
+</p>
 
-The interface combines **deep blue tones, lighter sections, white space, and photographic imagery**.
+---
 
-The darker sections provide contrast against lighter content areas, while the imagery reinforces the skincare and self-care theme.
+## Animated Visual Sections
 
-### Branding
+CSS animations are used to create movement across the website, including:
 
-The Dermaliss logo is used throughout the website together with a consistent navigation bar.
+* Changing hero backgrounds
+* Fade-in effects
+* Zoom effects
+* Slide effects
+* Opacity transitions
+* Hover transformations
 
-The primary navigation provides access to:
+<p align="center">
+  <img src="docs/demo/animations.gif" alt="Dermaliss visual animations" width="800">
+</p>
+
+---
+
+# 🎨 Visual Identity
+
+The visual identity of Dermaliss is built around a combination of **deep blue tones, light sections, white space, photography, and skincare imagery**.
+
+## Colour Language
+
+The darker blue sections provide contrast against lighter content areas, while photographic imagery reinforces the skincare and self-care theme.
+
+<p align="center">
+  <img src="docs/design/colour-palette.png" alt="Dermaliss colour palette" width="700">
+</p>
+
+---
+
+## Branding
+
+The Dermaliss logo is consistently used across the website.
+
+<p align="center">
+  <img src="images/Logo with Slogan.png" alt="Dermaliss logo with slogan" width="450">
+</p>
+
+The fixed navigation bar provides access to:
 
 **HOME · PRODUCTS · REMEDIES · MASSAGES · ABOUT US**
 
-The repeated use of colour, typography, imagery, and navigation elements helps maintain a unified identity across the different pages.
+This repeated visual structure keeps the separate pages connected as one website.
 
 ---
 
-## 🛠 Technologies
+# 🛠 Technologies
 
-### Core
+<p align="center">
 
-* **HTML5** — page structure and content
-* **CSS3** — styling, layouts, animations, transitions, and visual effects
-* **JavaScript** — interactive behaviour and smooth section navigation
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
 
-### Other Resources
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
 
-* **Google Fonts** — used on the Massages page
-* **Local image assets** — used for branding, products, ingredients, backgrounds, and supporting visuals
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
 
-The project does not require a front-end framework or package installation.
+</p>
+
+### HTML5
+
+Used to structure the individual website pages and their content.
+
+### CSS3
+
+Used for:
+
+* Layout
+* Styling
+* Animations
+* Transitions
+* Hover effects
+* Background imagery
+* Visual presentation
+
+### JavaScript
+
+Used primarily for interactive section navigation and smooth scrolling.
+
+### Google Fonts
+
+The Massages page uses Google Fonts for typography.
 
 ---
 
-## 📁 Project Structure
+# 📁 Project Structure
 
 ```text
 Dermaliss-Skincare-Website/
+│
 ├── About Us.html
 ├── home.html
 ├── massages.html
@@ -191,25 +319,45 @@ Dermaliss-Skincare-Website/
 ├── scroll.js
 │
 ├── images/
-│   ├── Branding and logo assets
+│   ├── Logo and branding
 │   ├── Product imagery
-│   ├── Remedy and ingredient imagery
+│   ├── Remedy imagery
 │   ├── Massage imagery
-│   └── Background and supporting images
+│   ├── Backgrounds
+│   └── Supporting assets
 │
-└── Products Page/
-    ├── Products.html
-    ├── Products.js
-    └── Product images
+├── Products Page/
+│   ├── Products.html
+│   ├── Products.js
+│   └── Product images
+│
+└── docs/
+    ├── screenshots/
+    │   ├── home.png
+    │   ├── products.png
+    │   ├── remedies.png
+    │   ├── massages.png
+    │   └── about.png
+    │
+    ├── demo/
+    │   ├── homepage.gif
+    │   ├── product-interaction.gif
+    │   ├── hover-interactions.gif
+    │   └── animations.gif
+    │
+    └── design/
+        └── colour-palette.png
 ```
 
-The main pages contain their page-specific styling, while `scroll.js` provides the shared smooth-scrolling navigation function.
+The page-specific styling is contained within the HTML files, while `scroll.js` provides shared smooth-scrolling functionality.
 
 ---
 
-## ▶ Running the Website
+# ▶ Running Dermaliss
 
-**Dermaliss-Skincare-Website** is a static front-end website and does not require a database, backend, build process, or package installation.
+**Dermaliss-Skincare-Website** is a static front-end website.
+
+No database, backend, package installation, or build process is required.
 
 ### Clone the repository
 
@@ -219,9 +367,9 @@ git clone https://github.com/Umaima-Manzoor/Dermaliss-Skincare-Website.git
 
 ### Open the project
 
-Navigate to the cloned `Dermaliss-Skincare-Website` folder and open it in a code editor such as Visual Studio Code.
+Open the cloned **Dermaliss-Skincare-Website** directory in a code editor such as Visual Studio Code.
 
-### Launch the website
+### Launch
 
 Open `home.html` in a web browser.
 
@@ -229,9 +377,9 @@ For development, the project can also be opened using **Live Server** in Visual 
 
 ---
 
-## 📌 Project Scope
+# 📌 Project Scope
 
-This repository contains the **static front-end version of Dermaliss**.
+This repository contains the **front-end version of Dermaliss**.
 
 ### Included
 
@@ -239,14 +387,14 @@ This repository contains the **static front-end version of Dermaliss**.
 * Product presentation
 * Home-remedy content
 * Facial massage guides
-* About/brand section
+* Brand/about section
 * Image-based navigation
 * Hover interactions
 * CSS animations
 * Smooth scrolling
 * Consistent navigation and branding
 
-### Not Included
+### Not included
 
 * Database
 * User authentication
@@ -257,15 +405,13 @@ This repository contains the **static front-end version of Dermaliss**.
 * Product ordering
 * Server-side functionality
 
-A separate Dermaliss project contains the **database implementation** and is maintained as a separate project.
+A separate Dermaliss project contains the **database implementation** and is documented independently.
 
 ---
 
-## 🎓 Academic Project
+# 🎓 Academic Project
 
-Dermaliss was developed as an academic web-development project.
-
-The project provided practical experience with:
+Dermaliss was developed as an academic web-development project, providing practical experience with:
 
 * Multi-page website development
 * HTML and CSS
@@ -273,14 +419,19 @@ The project provided practical experience with:
 * Navigation design
 * Visual asset management
 * CSS animations and transitions
-* Consistent branding and interface design
+* Consistent branding
+* User-focused interface design
 
 ---
 
 <div align="center">
 
-**Dermaliss**
+## Dermaliss
 
-*Revive your skin, transform your life.*
+**Revive your skin, transform your life.**
+
+<br>
+
+*Built as an academic front-end web development project.*
 
 </div>
