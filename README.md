@@ -82,6 +82,7 @@ Move through a cohesive multi-page interface built around consistent navigation,
 
 ---
 
+<a id="preview"></a>
 ## 🖼️ Preview
 
 <table>
