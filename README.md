@@ -1,7 +1,7 @@
 # Dermaliss
 
 <p align="center">
-  <img src="images/Logo.png" alt="Dermaliss Logo" width="420">
+  <img src="images/Logo.psd" alt="Dermaliss Logo" width="420">
 </p>
 
 <p align="center">
