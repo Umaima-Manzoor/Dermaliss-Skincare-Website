@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+</head>
+<style>
+    body{
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .navbar {
+      font-size: x-small;
+      display: flex;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: white;
+      z-index: 1000;
+      height: 13vh;
+      width: 100%;
+    }
+
+    .navbar button {
+      margin: 0.5vw;
+      vertical-align: top;
+      border: none;
+      background-color: white;
+      color: #3d5570;
+      transition: background-color 0.2s, transform 0.2s;
+      padding: 1.4vh;
+      cursor: pointer;
+    }
+
+    .navbar button:hover {
+      background-color: #2585a0;
+      color: white;
+      transform: scale(1.1);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+
+    .topBar {
+        position: relative;
+        width: 100%;
+        height: 90vh;
+        background-color: #3d5570;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10vh;
+    }
+    
+    .topBar img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        z-index: 1;
+        transition: opacity 0.5s;
+    }
+    
+    .topBar:hover img {
+        opacity: 1;
+    }
+
+    .textContainer {
+        position: relative;
+        font-weight: bold;
+        color: #ffffff;
+        text-align: center;
+        z-index: 1;
+        transition: color 0.5s;
+        pointer-events: none;
+    }
+    
+    
+    .textContainer h1 {
+        font-size: 4em;
+    }
+    
+    .textContainer .slogan {
+        font-size: 1.25em;
+    
+}
+    .topBar:hover .textContainer{
+        color: #3d5570;
+    }
+
+    
+
+    .allProducts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10vh;
+        margin: 10vh 30vh 15vh 30vh;
+    }
+
+    .products {
+        cursor: pointer;
+        transition: transform 0.4s;
+        width: 15vw;
+        text-align: center;
+    }
+
+    .products img {
+        width: 100%;
+        height: 33vh;
+        border-radius: 7vh;
+        object-position: center;
+      border: 1.5vh solid #2a3e54;
+    }
+
+    .products:hover {
+        transform: scale(1.05);
+    }
+
+    .details {
+        height: 90vh;
+        position: relative;
+        
+    }
+
+    .product-name {
+        padding-top: 4.5vh;
+        text-align: center; 
+        font-weight: bold; 
+        font-size: 1.3em; 
+        color: #3d5570;
+        text-decoration: underline;
+    }
+
+
+.description {
+        display: grid;
+        grid-template-columns: 25vw 25vw;
+        gap: 40vw;
+        background-color: #3d5570; 
+        color: #FFFFFF; 
+        margin: 5vh 0 5vh;
+        padding: 7vh;
+        height: 70%;
+        width: 100%;
+        border-radius: 3vh;
+        text-align: justify;
+    }
+
+    .description h3 {
+        text-align: center;
+        margin-bottom: 2vh;
+}
+
+    .ingredients, .benefits {
+        font-size: 2em;
+        line-height: 2;
+        
+    }
+
+    .ingredients {
+        margin-right: 10vh;
+    }
+
+    .imgstyle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+ 
+    }
+
+    
+    .image{
+        height: 70vh;
+        width: 30vw;
+        object-position: center;
+        border: 1.3vh solid #2a3e54;
+        border-radius: 2vh;
+        z-index: 10;
+        transition: transform 0.7s ease-in-out;
+        position: relative;
+    }
+
+    .directions {
+        position: absolute;
+        color: #3d5570;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 30vw;
+        height: 70vh;
+        z-index: 20;
+        pointer-events: none;
+        padding: 15vh;
+        opacity: 0;
+        border-radius: 2vh;
+        border: 1.3vh solid #2a3e54;
+        transition: background-color 0.8s, opacity 0.8s ease-in-out;
+    }
+
+    .image:hover + .directions{
+        opacity: 1;
+        background-color:rgba(255, 255, 255, 0.9);
+    }
+
+    .image:hover {
+        transform: rotateY(180deg);
+    }
+
+
+
+
+
+  
+    .contact-us {
+      height: 41vh;
+      width: 100%;
+      position: relative;
+      border-top: #3d5570 solid;
+      border-bottom: #3d5570 solid;
+    }
+
+    .contact-us img {
+      object-fit: cover;
+      object-position: 0% 85%;
+      width: 100%;
+      height: 41vh;
+    }
+
+    .contact-us::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 103%;
+      background-color: rgba(21, 32, 43, 0.9);
+      z-index: 10;
+    }
+
+    .the_text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 7vh 5vh 2vh 2vh;
+      width: 100%;
+      z-index: 100;
+    }
+
+    .contact {
+      font-size: 2em;
+      margin-top: 0;
+      text-decoration: underline;
+      text-decoration-style: double;
+      position: absolute;
+      margin-left: 43%;
+    }
+
+    h4 {
+      margin-top: 4vh;
+      margin-bottom: 3vh;
+      font-size: 1.3em;
+      text-decoration: underline;
+    }
+
+    .col {
+      margin-top: 6vh;
+      display: inline-block;
+      flex-direction: column;
+      height: 20vh;
+      width: 28%;
+      text-align: center;
+    }
+
+    .creators {
+      margin-bottom: 1.2vh;
+    }
+
+    .Location {
+      color: white;
+    }
+
+    .city {
+      width: 130%;
+      margin-left: -8vh;
+    }
+
+    .local {
+      float: right;
+      margin-right: 5%;
+    }
+
+    .emails,
+    .names {
+      margin-left: 8vh;
+    }
+
+    .dark_bg {
+        color: #FFFFFF;
+    }
+
+    
+
+
+</style>
+<body>
+    <div class="navbar">
+        <img
+        style="width: 48vh; height: 20vh; margin-top: 2.5vh"
+        src="../images/branding/logo1.png"
+        alt="Dermaliss logo"
+      />
+      <a style="margin-left: 40%" href="../index.html"
+      ><button type="">HOME</button></a
+    >
+        <a href="products.html"><button type="">PRODUCTS</button></a>
+        <a href="remedies.html"><button type="">REMEDIES</button></a>
+        <a href="massages.html"><button type="">MASSAGES</button></a>
+        <a href="about.html"><button type="">ABOUT US</button></a>
+    </div>
+
+    <div class="topBar">
+        <img src="../images/products/Bar image.jpg" alt="Product Preview Image">
+        <div class="textContainer">
+        <h1 class="heading">PRODUCTS</h1>
+        <h3 class="slogan">Feel the Difference, See the Glow</h3>
+    </div>
+    </div>
+
+
+    <div class="allProducts">
+        <div class="products">
+            <img src="../images/products/Hydrating Mask.jpg" alt="Hydrating Mask" onclick="navigateToSection('hydrating-mask')">
+            <p>Laneige Water Sleeping Mask</p>
+        </div>
+        <div class="products">
+            <img src="../images/products/Hydrating Serum.webp" alt="Hyaluronic Acid Serum" onclick="navigateToSection('healing-serum')">
+            <p>Healing Serum: CeraVe Hydrating Hyaluronic Acid Serum</p>
+        </div>
+        <div class="products">
+            <img src="../images/products/Exfoliating Toner.jpg" alt="Exfoliating Toner" onclick="navigateToSection('exfoliating-toner')">
+            <p>Exfoliating Toner: The Ordinary Glycolic Acid 7% Toning Solution</p>
+        </div>
+        <div class="products">
+            <img src="../images/products/Acne Treatment.jpg" alt="Acne Treatment" onclick="navigateToSection('acne-treatment')">
+            <p>Acne Spot Treatment: La Roche-Posay Effaclar Duo (+)</p>
+        </div>
+        <div class="products">
+            <img src="../images/products/lip therapy.webp" alt="Lip Therapy"  onclick="navigateToSection('lip-therapy')">
+            <p>Fresh Sugar Lip Treatment Advanced Therapy</p>
+        </div>
+        </div>
+
+        
+        <br>
+
+        <div  class="details" id="hydrating-mask">
+            <div class="product-name">
+                <h2>Hydrating Mask</h2>
+            </div>
+            <div class="description">
+                    <div class="Benefits">
+                        <h3>Benefits</h3>
+                        <ul>
+                            <li>Deeply hydrates and nourishes the skin while you sleep.</li>
+                            <li>Helps improve skin texture, making it soft, smooth, and plump.</li>
+                            <li>Soothes and calms the skin, reducing redness and irritation.</li>
+                            <li>Leaves the skin looking refreshed and glowing in the morning.</li>
+                        </ul>
+                               
+                    </div>
+                        <div class="imgstyle">
+                            <img class="image" src="../images/products/Hydrating Mask.jpg" alt="Hydrating Mask">
+                            <div class="directions">
+                                <h3>Directions</h3>
+                                <ul>
+                                    <li>After cleansing and toning your face, take a small amount of the mask.</li>
+                                    <li>Apply an even layer across your face, avoiding the eye and lip area.</li>
+                                <li>Leave it on overnight and rinse off with water in the morning.</li>
+                                <li>Use it 2-3 times a week as the final step of your nighttime skincare routine.</li>
+                            </ul>
+                        </div>
+                    </div>
+              
+                    
+                    
+                    <div class="Ingredients">
+                        <h3>Ingredients</h3>
+                        <ul>
+                            <li>Hyaluronic Acid</li>
+                            <li>Beta-Glucan</li>
+                            <li>Ceramides</li>
+                            <li>Sleep-Tox™ Technology</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+          
+        <br>
+
+        <div class="details" id="healing-serum">
+            <div class="product-name">
+                <h2>Healing Serum</h3>
+            </div> 
+
+                <div class="description">
+                    <div class="Benefits">
+                        <h3>Benefits</h3>
+                        <ul>
+                            <li>Deeply hydrates and plumps the skin..</li>
+                            <li>Reduces redness and irritation.</li>
+                            <li>Strengthens the skin barrier.</li>
+                        </ul>
+                    </div>
+                    <div class="imgstyle">
+                        <img class="image" src="../images/products/Hydrating Serum.webp" alt="Hyaluronic Acid Serum">
+                        <div class="directions">
+                            <h3>Directions</h3>
+                            <ul>
+                                <li>Cleanse your face and pat dry.</li>
+                                <li>Apply 1-2 pumps of the serum to your face and neck.</li>
+                                <li>Follow up with a moisturizer to lock in the hydration.</li>
+                                <li>Frequency: Use twice daily (morning and night).</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="Ingredients">
+                        <h3>Ingredients</h3>
+                        <ul>
+                            <li>Hyaluronic Acid</li>
+                            <li>Vitamin B5 (Panthenol)</li>
+                            <li>Ceramides</li>
+                        </ul>
+                    </div>
+                </div>
+
+               
+            </div>
+        <br>
+
+        <div class="details"  id="exfoliating-toner">
+            <div class="product-name">
+                <h2>Exfoliating Toner</h2>
+                </div>
+                <div class="description">
+                    <div class="Benefits">
+                        <h3>Benefits</h3>
+                        <ul>
+                            <li>Exfoliates dead skin cells, revealing a brighter complexion.</li>
+                            <li>Improves skin texture and reduces the appearance of pores.</li>
+                            <li>Helps with uneven skin tone and hyperpigmentation.</li>
+                        </ul>
+                        </div>
+                    <div class="imgstyle">
+                        <img class="image" src="../images/products/Exfoliating Toner.jpg" alt="Exfoliating Toner">
+                        <div class="directions">
+                            <h3>Directions</h3>
+                            <ul>
+                                <li>Use after cleansing your face at night.</li>
+                                <li>Soak a cotton pad with the toner and swipe it across your face, avoiding the eye area.</li>
+                                <li>Follow with a hydrating serum or moisturizer.</li>
+                                <li>Frequency: Use 2-3 times per week, especially if you have sensitive skin.</li>
+                            </ul>
+                        </div>
+                        </div>
+                    <div class="Ingredients">
+                        <h3>Ingredients</h3>
+                        <ul>
+                            <li>Glycolic Acid</li>
+                            <li>Tasmanian Pepperberry Extract</li>
+                            <li>Aloe Vera</li>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            
+
+               
+        <br>
+    
+        <div class="details"  id="acne-treatment">
+            <div class="product-name">
+                <h2>Acne Treatment</h3>
+            </div>
+                <div class="description">
+                    <div class="Benefits">
+                        <h3>Benefits</h3>
+                        <ul>
+                            <li>Reduces the size and redness of pimples quickly.</li>
+                            <li>Prevents future breakouts by unclogging pores.</li>
+                            <li>Helps fade post-acne marks over time.</li>
+                        </ul>
+                    </div>
+                    <div class="imgstyle">
+                        <img class="image" src="../images/products/Acne Treatment.jpg" alt="Acne Treatment">
+                        <div class="directions">
+                            <h3>Directions</h3>
+                            <ul>
+                                <li>Cleanse your face and dry it.</li>
+                                <li>Apply a small amount of the treatment directly onto the affected area.</li>
+                                <li>Follow with a moisturizer.</li>
+                                <li>Frequency: Use once daily (nighttime recommended).</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="Ingredients">
+                        <h3>Ingredients</h3>
+                        <ul>
+                            <li>Benzoyl Peroxide</li>
+                            <li>Niacinamide</li>
+                            <li>Ceramides</li>
+                            <li>Salicylic Acid</li>
+                        </ul>
+                    </div>
+                </div>
+            
+         
+                
+            </div>
+        <br>
+
+        
+        <div class="details"  id="lip-therapy">
+            <div class="product-name">
+                <h2>Lip Therapy</h3>
+            </div>
+                <div class="description">
+                    <div class="Benefits">
+                        <h3>Benefits</h3>
+                        <ul>
+                            <li>Helps fade lip pigmentation and brighten the lips.</li>
+                            <li>Provides intense hydration and reduces the appearance of fine lines.</li>
+                            <li>Leaves lips feeling soft, smooth, and plump.</li>
+                        </ul>
+                    </div>
+                    <div class="imgstyle">
+                        <img class="image" src="../images/products/lip therapy.webp" alt="Lip therapy">
+                        <div class="directions">
+                            <h3>Directions</h3>
+                            <ul>
+                                <li>Apply a generous layer to clean lips..</li>
+                                <li>Use throughout the day as needed, or as an overnight treatment.</li>
+                                <li>Frequency: Can be used daily, both as a daytime balm and an overnight lip mask.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="Ingredients">
+                        <h3>Ingredients</h3>
+                        <ul>
+                            <li>Sugar</li>
+                            <li>Sea Fennel Extract</li>
+                            <li>Shea Butter and Jojoba Oil</li>
+                            <li>Vitamin C and E</li>
+                        </ul>
+                    </div>
+                </div>
+            
+            </div>
+
+                
+
+                <div class="contact-us dark_bg">
+                    <img src="../images/backgrounds/contactus2.png" alt="collage" />
+                    <div class="the_text">
+                      <h3 class="contact">Contact Us</h3>
+                      <div class="col names">
+                        <h4>Created by:</h4>
+                        <p class="creators">Umaima Manzoor Roll-No (24K-0501)</p>
+                        <p class="creators">Maryam Saleem Roll-No (24K-0779)</p>
+                        <p class="creators">Aiman Misbah Roll-No (24K-0842)</p>
+                      </div>
+              
+                      <div class="col emails">
+                        <h4>Email Addresses:</h4>
+                        <p class="creators">k240501@nu.edu.pk</p>
+                        <p class="creators">k240779@nu.edu.pk</p>
+                        <p class="creators">k240842@nu.edu.pk</p>
+                      </div>
+              
+                      <div class="col local">
+                        <h4>Location:</h4>
+                        <p class="creators">Main Campus: St-4, Sector 17-D, NH 5, Karachi</p>
+                        <p class="creators city">
+                          City Campus: 22-g block, 6, Shahrah-e-Faisal Block 6 P.E.C.H.S.,
+                          Karachi
+                        </p>
+                        <p class="creators">
+                          To Get Our Pin Location,
+                          <a
+                            class="Location"
+                            href="https://www.google.com/maps/dir//FAST+National+University+Karachi+Campus+St-4,+Sector+17-D+NH+5,+Karachi,+Karachi+City,+Sindh+Pakistan/@24.8568991,67.2646838,15z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3eb3316c5276e35b:0x823a6a0100195ffd"
+                            target="_blank"
+                            ><u>Click Here</u></a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+            <script src="../js/scroll.js"></script>
+            </script>
+    
+</body>
+</html>

@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Massages</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+    
+      }
+
+      
+
+      @keyframes zoomIn {
+        0% {
+          transform: scale(0);
+          opacity: 0;
+        }
+
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      h1 {
+        margin-top: 8vh;
+        transform: translateX(-50%, -50%);
+        animation: zoomIn 1s ease-out;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .slogan {
+        animation: fadeIn 1.5s ease-out forwards;
+        animation-delay: 1s;
+        opacity: 0;
+      }
+
+      .navbar {
+      font-size: x-small;
+      display: flex;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: white;
+      z-index: 1000;
+      height: 13vh;
+      width: 100%;
+    }
+
+    .navbar button {
+      margin: 0.5vw;
+      vertical-align: top;
+      border: none;
+      background-color: white;
+      color: #3d5570;
+      transition: background-color 0.2s, transform 0.2s;
+      padding: 1.4vh;
+      cursor: pointer;
+    }
+
+    .navbar button:hover {
+      background-color: #2585a0;
+      color: white;
+      transform: scale(1.1);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+      h2 {
+        font-size: 2em;
+      }
+
+      h1 {
+        font-family: "Raleway", sans-serif;
+        font-size: 4em;
+      }
+
+      .heading {
+        margin-top: 10vh;
+        text-align: center;
+        color: #fff;
+        background-color: #2a3e54;
+        padding-top: 30vh;
+        /* background-blend-mode: overlay; */
+        height: 90vh;
+        opacity: 1;
+        z-index: 0;
+        position:relative;
+        animation:changeBackground 12s infinite;
+        animation-delay: 2s;
+        transition: background-image 3s ease-in-out, opacity 1s ease-in-out;
+       
+      }
+      @keyframes changeBackground {
+  0%{
+    background-image: url("../images/massages/blue roller jade.png");
+    opacity: 0.5;
+  }
+  25%{
+    background-image: url("../images/massages/blue roller jade.png");
+    opacity: 1;
+  }
+
+
+ 25%,50%{
+    background-image: url("../images/massages/blue guashatool.png");
+    opacity:1;
+    
+  }
+  
+  50%,75% {
+    background-image: url(../images/massages/iceglobes.jpg);
+    opacity:1;
+  }
+  
+  75%, 100% {
+    background-image: url(../images/massages/kansawand.jfif);
+    opacity:1;
+    transition: opacity 1s ease-in-out; 
+  }
+}
+
+      .heading::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(42, 62, 84, 0.7);
+        z-index: -1;
+      }
+
+      .main {
+        height: 30vh;
+        padding-top: 10vh;
+      }
+
+
+      div.main img {
+
+        margin-top: 2vh;
+        transition: transform 0.2s;
+        border-radius: 8vh;
+        margin-left: 10vh;
+        
+      }
+      
+      .main img:hover {
+        transform: scale(1.17);
+      }
+      
+      .maindown img {
+        margin-left: 10vh;
+        
+        border-radius: 8vh;
+        transition: transform 0.2s;
+      }
+
+      .maindown {
+        margin-top: 10vh;
+        height: 50vh;
+      }
+
+      .main img, .maindown img {
+        object-fit:scale-down;
+        object-position: center;
+        background-color: white;
+        height: 35vh;
+        width: 19vw;
+        border: 1.5vh solid #2a3e54;
+      }
+
+      .maindown img:hover {
+        transform: scale(1.17);
+      }
+
+      h2 {
+        font-family: "Roboto", serif;
+      }
+
+      div.guasha {
+        height: 550px;
+        width: 100%;
+
+        background-color: #2a3e54;
+      }
+
+      ol.guashasteps {
+        color: #ffffff;
+        margin-top: 20px;
+        margin-left: 100px;
+      }
+
+      div.roller {
+        height: 550px;
+        background-color: #ffffff;
+        display: flex;
+      }
+
+      .roller-text {
+        margin-top: 50px;
+        margin-left: 300px;
+        color: #2a3e54;
+      }
+
+      div.lifting {
+        background-color: #2a3e54;
+        height: 550px;
+        color: #ffffff;
+      }
+
+      .kansa {
+        height: 500px;
+        background-color: #ffffff;
+        margin-left: 700px;
+        color: #2a3e54;
+      }
+
+      .iceglobes {
+        background-color: #2a3e54;
+        height: 550px;
+        color: #ffffff;
+      }
+
+.contact-us {
+      height: 41vh;
+      width: 100%;
+      position: relative;
+      border-top: #3d5570 solid;
+      border-bottom: #3d5570 solid;
+    }
+
+    .contact-us img {
+      object-fit: cover;
+      object-position: 0% 85%;
+      width: 100%;
+      height: 41vh;
+    }
+
+    .contact-us::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 103%;
+      background-color: rgba(21, 32, 43, 0.9);
+      z-index: 10;
+    }
+
+    .the_text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 7vh 5vh 2vh 2vh;
+      width: 100%;
+      z-index: 100;
+    }
+
+    .contact {
+      font-size: 2em;
+      margin-top: 0;
+      text-decoration: underline;
+      text-decoration-style: double;
+      position: absolute;
+      margin-left: 43%;
+    }
+
+    h4 {
+      margin-top: 4vh;
+      margin-bottom: 3vh;
+      font-size: 1.3em;
+      text-decoration: underline;
+    }
+
+    .col {
+      margin-top: 6vh;
+      display: inline-block;
+      flex-direction: column;
+      height: 20vh;
+      width: 28%;
+      text-align: center;
+    }
+
+    .creators {
+      margin-bottom: 1.2vh;
+    }
+
+    .Location {
+      color: white;
+    }
+
+    .city {
+      width: 130%;
+      margin-left: -8vh;
+    }
+
+    .local {
+      float: right;
+      margin-right: 5%;
+    }
+
+    .emails,
+    .names {
+      margin-left: 8vh;
+    }
+
+    .dark_bg {
+        color: #FFFFFF;
+    }
+
+      
+
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <img
+      style="width: 48vh; height: 20vh; margin-top: 2.5vh"
+      src="../images/branding/logo1.png"
+      alt="Dermaliss logo"
+    />
+    <a style="margin-left: 40%" href="../index.html"
+    ><button type="">HOME</button></a
+  >
+      <a href="products.html"><button type="">PRODUCTS</button></a>
+      <a href="remedies.html"><button type="">REMEDIES</button></a>
+      <a href="massages.html"><button type="">MASSAGES</button></a>
+      <a href="about.html"><button type="">ABOUT US</button></a>
+  </div>
+
+   
+    
+
+    <div class="heading">
+      <h1>MASSAGES</h1>
+      <h3 class="slogan">Soothe Your Skin, Calm Your Spirit</h3>
+    </div>
+
+    <div class="main">
+      <img
+        style="margin-left: 15vw;"
+        src="../images/massages/blue guashatool.png"
+        alt="Guashatool"
+        onclick="navigateToSection('guasha-massage')"
+      />
+
+      <img
+        src="../images/massages/blue roller jade.png"
+        alt="Rollertool"
+        onclick="navigateToSection('roller-massage')"
+      />
+
+      <img
+        src="../images/massages/sculptort.jpg"
+        alt="Sculptor tool"
+        onclick="navigateToSection('sculpting-massage')"
+      />
+    </div>
+
+    <div class="maindown">
+      <img
+        style="margin-left: 26.5vw;"
+        src="../images/massages/kansawand.jfif"
+        alt="Kansa wand"
+        onclick="navigateToSection('kansa-massage')"
+      />
+      <img
+        src="../images/massages/iceglobes.jpg"
+        alt="iceglobe tool"
+        onclick="navigateToSection('iceglobe-massage')"
+      />
+    </div>
+
+    <div class="guasha" id="guasha-massage">
+      <br /><br /><br />
+
+      <h2 style="color: #ffffff; margin-left: 100px">GUASHA MASSAGE</h2>
+
+      <ul style="color: #ffffff; margin-top: 20px; margin-left: 100px">
+        <h3>Benefits:</h3>
+        <li>Makes skin smooth and even</li>
+        <li>Improves facial contours and complexion</li>
+        <li>Reduces puffiness</li>
+        <li>Eliminates wrinkles</li>
+      </ul>
+
+      <ol class="guashasteps">
+        <h3>Directions:</h3>
+        <li>
+          Use the long side of the scraper too massage along the line from the
+          nose to the ear
+        </li>
+        <li>
+          Use the edge of the scraper to massage along the line starting from
+          the corner of your eye
+        </li>
+        <li>
+          Use the short side of the scraper to massage the nose bridge upward
+        </li>
+        <li>
+          Use the long side of the scraper to massage the entire forehead upward
+        </li>
+        <li>Apply these steps to both side of the face</li>
+      </ol>
+
+      <img
+        style="
+          margin-top: -250px;
+          margin-right: 100px;
+          height: 270px;
+          width: 300px;
+          float: right;
+          border-radius: 50px;
+          border: 10px solid #778899;
+        "
+        src="../images/massages/guashamassage.jpg"
+        alt="Guasha massage"
+      />
+      
+    </div>
+
+    <div class="roller" id="roller-massage">
+      <br />
+
+      <img
+        style="
+          margin-left: 100px;
+          height: 300px;
+          width: 300px;
+          margin-top: 120px;
+          border-radius: 50px;
+          border: 10px solid #2a3e54;
+        "
+        src="../images/massages/rollermassage.webp"
+        alt="Roller massage"
+      />
+
+      <div class="roller-text">
+        <h2>ROLLER MASSAGE</h2>
+
+        <ul style="margin-top: 20px">
+          <h3>Benefits:</h3>
+          <li>Helps to reduce facial puffiness</li>
+          <li>Improves complexion</li>
+          <li>Improves skin tone</li>
+        </ul>
+
+        <ol style="margin-top: 20px">
+          <h3>Directions:</h3>
+          <li>Use a large roller to massage the entire forehead upward</li>
+          <li>
+            Roll along the nose bridge to the hairline with a small roller
+          </li>
+          <li>
+            Use a small roller to roll along the line just below your eyebrow
+          </li>
+          <li>
+            Use a weak roller to roll along the line starting from the corner of
+            your eye
+          </li>
+          <li>
+            Open your mouth saying "O" . Roll up and down along the nasobladial
+            fold
+          </li>
+          <li>Use a large roller to roll along the jawline upward</li>
+          <li>
+            Use a large roller to roll along the line starting from the corner
+            of your lips upwards
+          </li>
+          <li>Repeat the steps for the other side of the face too</li>
+          <li>
+            After your massage session . Use your fingertips to gently tap over
+            your forehead,cheeks,chin,and area around the eyes
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="lifting" id="sculpting-massage">
+      <br />
+      <h2 style="margin-left: 50px; margin-top: 50px">SCULPTING MASSAGE</h2>
+      <ul style="margin-top: 20px; margin-left: 50px">
+        <h3>Benefits:</h3>
+        <li>Tone, lift, and define facial muscles.</li>
+        <li>Enhance facial contours</li>
+        <li>Reduce puffiness, and improve circulation</li>
+      </ul>
+
+      <ol style="margin-left: 50px; margin-top: 20px">
+        <h3>Directions:</h3>
+        <li>
+          At the center of your chin, Glide the sculptor along the jawline,from
+          your chin toward your ear
+        </li>
+        <li>
+          Use upward strokes, glide the sculptor outward toward the temple.
+        </li>
+        <li>
+          Starting in the center of the forehead, glide the tool upwards toward
+          the hairline
+        </li>
+        <li>
+          Use the edge of the sculptor , glide near the inner corner of the eye
+          and move outward the temple.
+        </li>
+        <li>
+          At the base of your neck glide the sculptor upward toward the jawline.
+          Repeat on both sides of the neck
+        </li>
+        <li>
+          For the back of the neck,glide from the base of the neck upward toward
+          the base of the skull.
+        </li>
+        <li>
+          After massage. Use your fingertips to gently tap over your forehead ,
+          cheeks and chin.
+        </li>
+      </ol>
+
+      <img
+        style="
+          float: right;
+          margin-top: -270px;
+          margin-right: 100px;
+          height: 270px;
+          width: 270px;
+          border-radius: 50px;
+          border: 10px solid #778899;
+        "
+        src="../images/massages/sculptormassage.jfif"
+        alt="Face sculpting massage"
+      />
+    </div>
+
+    <div class="kansa" id="kansa-massage">
+      <h2 style="margin-top: 50px">KANSA MASSAGE</h2>
+
+      <ul style="margin-top: 30px">
+        <h3>Benefits:</h3>
+        <li>Improves skin tone and texture</li>
+        <li>Reduces swelling and puffiness.</li>
+        <li>Removes toxins, preventing acne and other skin issues.</li>
+      </ul>
+
+      <ol style="margin-top: 30px">
+        <h3>Directions:</h3>
+        <li>
+          Using the Kansa wand,gentlly circulate on the forehead, cheeks, and
+          jawline
+        </li>
+        <li>Start at the center of the forehead and move outward.</li>
+        <li>Sweep under the eyes and along the jawline.</li>
+        <li>Trace the sides of the nose down to the chin.</li>
+        <li>
+          On face and neck, use upward and outward strokes to lift and tone the
+          skin.
+        </li>
+        <li>Ensure even coverage, spending a minute or two on each section.</li>
+      </ol>
+
+      <img
+        style="
+          margin-left: -600px;
+          height: 300px;
+          width: 300px;
+          margin-top: -300px;
+          border-radius: 50px;
+          border: 10px solid #2a3e54;
+        "
+        src="../images/massages/kansamassage.webp"
+        alt="kansa massage"
+      />
+    </div>
+
+    <div class="iceglobes" id="iceglobe-massage">
+      <br /><br /><br />
+
+      <h2 style="margin-left: 100px">ICE GLOBES</h2>
+
+      <ul style="margin-left: 100px; margin-top: 30px">
+        <h3>Benefits:</h3>
+        <li>Reduces Puffiness and Inflammation</li>
+        <li>Promotes Lymphatic Drainage</li>
+        <li>Relieves Muscle Tension</li>
+      </ul>
+
+      <ol style="margin-left: 100px; margin-top: 30px">
+        <h3>Directions:</h3>
+        <li>
+          Place the globes in the fridge or a bowl of ice water for about 15–30
+          minutes.
+        </li>
+        <li>
+          Start at the sides of your nose and move outward toward your ears.
+        </li>
+        <li>
+          Roll the globes from the inner corners of your under-eye area to the
+          temples.
+        </li>
+        <li>
+          Massage along your jawline, starting at the center of the chin and
+          moving outward toward the ears.
+        </li>
+        <li>
+          Glide the globes from your collarbone upwards toward your jawline,
+          following the natural shape of your neck.
+        </li>
+      </ol>
+
+      <img
+        style="
+          width: 300px;
+          height: 300px;
+          margin-right: 50px;
+          margin-top: -270px;
+          float: right;
+          border-radius: 50px;
+          border: 10px solid #778899;
+        "
+        src="../images/massages/iceglobesmassage.webp"
+        alt="Ice globes massage"
+      />
+    </div>
+
+    <div class="contact-us dark_bg">
+      <img src="../images/backgrounds/contactus2.png" alt="collage" />
+      <div class="the_text">
+        <h3 class="contact">Contact Us</h3>
+        <div class="col names">
+          <h4>Created by:</h4>
+          <p class="creators">Umaima Manzoor Roll-No (24K-0501)</p>
+          <p class="creators">Maryam Saleem Roll-No (24K-0779)</p>
+          <p class="creators">Aiman Misbah Roll-No (24K-0842)</p>
+        </div>
+
+        <div class="col emails">
+          <h4>Email Addresses:</h4>
+          <p class="creators">k240501@nu.edu.pk</p>
+          <p class="creators">k240779@nu.edu.pk</p>
+          <p class="creators">k240842@nu.edu.pk</p>
+        </div>
+
+        <div class="col local">
+          <h4>Location:</h4>
+          <p class="creators">Main Campus: St-4, Sector 17-D, NH 5, Karachi</p>
+          <p class="creators city">
+            City Campus: 22-g block, 6, Shahrah-e-Faisal Block 6 P.E.C.H.S.,
+            Karachi
+          </p>
+          <p class="creators">
+            To Get Our Pin Location,
+            <a
+              class="Location"
+              href="https://www.google.com/maps/dir//FAST+National+University+Karachi+Campus+St-4,+Sector+17-D+NH+5,+Karachi,+Karachi+City,+Sindh+Pakistan/@24.8568991,67.2646838,15z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3eb3316c5276e35b:0x823a6a0100195ffd"
+              target="_blank"
+              ><u>Click Here</u></a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    
+
+    <script src="../js/scroll.js"></script>
+  </body>
+</html>
