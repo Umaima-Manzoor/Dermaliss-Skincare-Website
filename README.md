@@ -6,14 +6,15 @@
 
 <p><strong>A multi-page skincare website built with HTML, CSS, and JavaScript.</strong></p>
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)
 ![License](https://img.shields.io/badge/License-MIT-3d5570?style=for-the-badge)
 
 <p>
   <a href="#-preview">Preview</a> ·
   <a href="#-about-dermaliss">About</a> ·
+  <a href="#-team">Team</a> ·
   <a href="#-interactive-experience">Interactions</a> ·
   <a href="#-visual-identity">Design</a> ·
   <a href="#-technologies">Technologies</a> ·
@@ -78,7 +79,7 @@
 
 ## 🌸 About Dermaliss
 
-**Dermaliss** is a multi-page skincare website developed as an academic front-end web development project.
+**Dermaliss** is a multi-page skincare website developed as a group academic front-end web development project.
 
 The website brings together skincare products, home remedies, facial massage techniques, and brand information under one consistent visual identity.
 
@@ -92,6 +93,18 @@ Rather than functioning as a collection of unrelated HTML pages, Dermaliss was d
 * 🎞️ CSS animations and transitions
 * 🧭 Consistent navigation
 * 🌸 A unified skincare-focused visual identity
+
+---
+
+## 👥 Team
+
+Dermaliss was developed as a **group academic project** by:
+
+* **[Umaima Manzoor](https://github.com/Umaima-Manzoor)** — Remedies page, styling contributions to the Products and Massages pages, and consistency improvements across the website.
+* **[Aiman-Misbah](https://github.com/Aiman-Misbah/DSA-Project)** — Contributions to the Home and Products pages.
+* **[maryam746](https://github.com/maryam746/OS-PROJECT-4TH-SEM)** — Home and Massages pages.
+
+Work was shared across the project, with contributions also made to the shared styling, header, footer, naming conventions, and overall consistency of the website.
 
 ---
 
@@ -288,7 +301,7 @@ Used extensively for:
 
 ### JavaScript
 
-Used primarily for interactive behaviour, including the shared smooth-scrolling functionality.
+Used primarily for interactive behaviour, including the shared smooth-scrolling functionality and page-specific interactions.
 
 ### Google Fonts
 
@@ -416,7 +429,7 @@ http://localhost:8000/
 
 # 🎓 Academic Project
 
-Dermaliss was developed as an **academic web-development project**.
+Dermaliss was developed as a **group academic web-development project**.
 
 The project provided practical experience with:
 
@@ -439,7 +452,7 @@ The project provided practical experience with:
 
 <img src="images/branding/logo1.png" alt="Dermaliss" width="300">
 
-### *Revive your skin, transform your life.*
+### <em>Revive your skin, transform your life.</em>
 
 <br>
 
